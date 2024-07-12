@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <link
+            rel="stylesheet"
+            href="../../src/stilus.css"
+        />
+        <link
+            rel="shortcut icon"
+            href="../../src/info-bg.png"
+            type="image/x-icon"
+        />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+        />
+        <title>Hatodik lecke - A számok és az aritmetikai operátorok</title>
+    </head>
+    <body>
+        <nav>
+            <a href="./index.html">Tananyag Python</a>
+            <a href="#fel">
+                <span class="material-symbols-outlined">stat_3</span>
+            </a>
+        </nav>
+        <span id="fel"></span>
+        <div class="container">
+            <h1>Hatodik lecke - A számok és az aritmetikai operátorok</h1>
+            <div class="belso-container">
+                <h3>Milyen számtípusok vannak a Python-ban?</h3>
+                <div class="feladat">
+                    <span class="feladat-lista">Feladat: </span>
+                    <p>
+                        Az interneten keressünk rá hogy milyen számtípusokat
+                        használhatunk a programozáshoz!
+                    </p>
+                </div>
+                <div class="valasz">
+                    <span class="feladat-lista">Válaszok:</span>
+                    <div class="kep">
+                        <img src="./images/python07.png" />
+                    </div>
+                    <p>
+                        A Python-ban három szám típus van: <br />
+                        int-egész szám <br />
+                        float-lebegőpontos szám <br />
+                        complex-komplex szám
+                    </p>
+                    <p>
+                        A type() függvényt használjuk, hogy ellenőrizzük a
+                        változó típusát.
+                    </p>
+                    <div class="kep">
+                        <img src="./images/kep_068.png" />
+                    </div>
+                    <div class="kep">
+                        <img src="./images/kep_069.png" />
+                    </div>
+                    <p>
+                        Az int-egész szám (integer) lehet pozitív, negatív vagy
+                        0 tizedesjegy nélkül. <br />
+                        Nincs alsó és felső határ a Python-ban az értékekre.
+                    </p>
+                    <p>
+                        A float-lebegőpontos szám lehet pozitív, negatív vagy
+                        0.0, egy vagy több tizedesjeggyel. <br />
+                        Az egészt rész a tört résztől ponttal (.) választjuk el.
+                        <br />
+                        Nincs alsó és felső határ a Python-ban az értékekre.
+                        <br />
+                        Az e vagy E szimbolumokkal tudományos jelölést
+                        használhatunk.
+                    </p>
+                    <div class="kep">
+                        <img src="./images/kep_070.png" />
+                    </div>
+                    <div class="kep">
+                        <img src="./images/kep_071.png" />
+                    </div>
+                    <p>
+                        A complex-szám a képzetes rész jelöléséhez a j-betűt
+                        használja. Nem fogjuk használni!
+                    </p>
+                </div>
+                <div class="forras">
+                    <span class="feladat-lista">Források: </span>
+                    <p>
+                        <a
+                            href="https://www.w3schools.com/python/python_numbers.asp"
+                            target="_blank"
+                            >w3schools</a
+                        >
+                    </p>
+                </div>
+            </div>
+            <div class="belso-container">
+                <h3>A típuskonverzió számok között.</h3>
+                <div class="feladat">
+                    <span class="feladat-lista">Feladat: </span>
+                    <p>
+                        Az interneten keressünk rá mit nevezünk
+                        típuskonverziónak!
+                    </p>
+                </div>
+                <div class="valasz">
+                    <span class="feladat-lista">Válaszok:</span>
+                    <div class="kep">
+                        <img src="./images/image21.jpg" />
+                    </div>
+                    <p>
+                        Néha szükséges lehet az egyik típusú számot átalakítani
+                        egy másikra, mert csak így tudunk vele dolgozni.
+                    </p>
+                    <p>
+                        Lehetséges átalakítások, konverziók: <br />
+                        int => float <br />
+                        int => complex <br />
+                        float => int <br />
+                        float => complex
+                    </p>
+                    <p>
+                        Ehhez az adott típus konstruktor függvényét használja.
+                        Ezek különböző egész szám és lebegőpontos szám
+                        literálokat, vagy azokat tartalmazó változókat fogadnak
+                        paraméterként!
+                    </p>
+                    <p>A komplex számokat nem lehet átalakítani!</p>
+                    <div class="kep">
+                        <img src="./images/kep_072.png" />
+                    </div>
+                    <div class="kep">
+                        <img src="./images/kep_073.png" />
+                    </div>
+                    <p>
+                        Nagyon sokszor hasznos lesz a számunkra, hogy
+                        karakterláncsorozatot (string) is át tudunk alakítani
+                        számmá!
+                    </p>
+                    <div class="kep">
+                        <img src="./images/kep_074.png" />
+                    </div>
+                    <div class="kep">
+                        <img src="./images/kep_075.png" />
+                    </div>
+                </div>
+                <div class="forras">
+                    <span class="feladat-lista">Források: </span>
+                    <p>
+                        <a
+                            href="https://www.w3schools.com/python/python_casting.asp"
+                            target="_blank"
+                            >wschools</a
+                        >
+                    </p>
+                </div>
+            </div>
+            <div class="belso-container">
+                <h3>Feladatok megoldásra.</h3>
+                <div class="feladat">
+                    <span class="feladat-lista">Feladat: </span>
+                    <p>
+                        Adjunk meg 10 egész és 10 lebegőpontos számot és 10
+                        számot reprezentáló karakterláncsorozatot! Alakítsuk át
+                        őket minden lehetséges módon!
+                    </p>
+                </div>
+            </div>
+            <div class="belso-container">
+                <h3>Aritmetikai operátorok.</h3>
+                <div class="feladat">
+                    <span class="feladat-lista">Feladat: </span>
+                    <p>
+                        Az interneten keressünk rá milyen aritmetikai operátorok
+                        léteznek!
+                    </p>
+                </div>
+                <div class="valasz">
+                    <span class="feladat-lista">Válaszok:</span>
+                    <div class="kep">
+                        <img src="./images/image22.png" />
+                    </div>
+                    <p>
+                        A számokkal műveleteket (operation) szeretnénk
+                        végrehajtani. Ezekhez operandusként számokból képzett
+                        változókat és/vagy literálokat használunk. A műveleti
+                        jeleket nevezzük aritmetikai operátoroknak.
+                    </p>
+                    <div class="kep">
+                        <img src="./images/kep_076.png" />
+                    </div>
+                    <p>Nézzünk néhány példát.</p>
+                    <div class="kep">
+                        <img src="./images/kep_077.png" />
+                    </div>
+                    <div class="kep">
+                        <img src="./images/kep_078.png" />
+                    </div>
+                    <p>
+                        Az úgynevezett rövidített értékadás során egy váltózó
+                        értékét változtatjuk meg az adott szám értékkel, és
+                        adjuk vissza a változónak ezt a módosított értéket!
+                        <br />
+                        Ehhez a hozzárendelés operátorát (=) dolgozzuk át egy
+                        kicsit. <br />
+                        Így kapjuk meg a hozzárendelő operátorokat (assignment
+                        operators).
+                    </p>
+                    <div class="kep">
+                        <img src="./images/kep_079.png" />
+                    </div>
+                    <p>Nézzünk erre is néhány példát.</p>
+                    <div class="kep">
+                        <img src="./images/kep_080.png" />
+                    </div>
+                    <div class="kep">
+                        <img src="./images/kep_081.png" />
+                    </div>
+                </div>
+                <div class="forras">
+                    <span class="feladat-lista">Források: </span>
+                    <p>
+                        <a
+                            href="https://www.w3schools.com/python/python_operators.asp"
+                            target="_blank"
+                            >wschools</a
+                        >
+                    </p>
+                </div>
+            </div>
+            <div class="belso-container">
+                <h3>Feladatok megoldásra.</h3>
+                <div class="feladat">
+                    <span class="feladat-lista">Feladat: </span>
+                    <p>
+                        Oldjunk meg matematikai feladatokat a fenti eszközök
+                        segítségével!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <link
+            rel="stylesheet"
+            href="../../src/stilus.css"
+        />
+        <link
+            rel="shortcut icon"
+            href="../../src/info-bg.png"
+            type="image/x-icon"
+        />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+        />
+        <title>
+            Harmadik lecke - A Python programozási nyelv szintaxisa, változók,
+            literálok és adattípusok
+        </title>
+    </head>
+    <body>
+        <nav>
+            <a href="./index.html">Tananyag Python</a>
+            <a href="#fel">
+                <span class="material-symbols-outlined">stat_3</span>
+            </a>
+        </nav>
+        <span id="fel"></span>
+        <div class="container">
+            <h1>
+                Harmadik lecke - A Python programozási nyelv szintaxisa,
+                változók, literálok és adattípusok
+            </h1>
+            <div class="belso-container">
+                <h3>Miért nevezhetjük a Python-t "behúzott" nyelvnek?</h3>
+                <div class="feladat">
+                    <span class="feladat-lista">Feladat: </span>
+                    <p>
+                        Az interneten keressünk rá a Python programozási nyelv
+                        alapjaira!
+                    </p>
+                </div>
+                <div class="valasz">
+                    <span class="feladat-lista">Válaszok:</span>
+                    <div class="kep">
+                        <img src="./images/image12.png" />
+                    </div>
+                    <p>
+                        A behúzás a Python egyik legfontosabb jellemzője.
+                        Szóközökre utal, amelyek egy kódblokk kezdetét jelölik.
+                    </p>
+                    <p>
+                        Más programozási nyelvekkel ellentétben a Python nem
+                        használ kapcsos zárójeleket ({ }) az utasításblokkok
+                        körül. A program blokkszerkezetének kifejezésére
+                        behúzást (fehér szóközöket) használ.
+                    </p>
+                    <p>
+                        A szóközök helyes használata blokkokat hoz létre a
+                        Pythonban. A behúzás a Python-programokat rendezettebbé
+                        teszi, és fenntartja a kód olvashatóságát.
+                    </p>
+                    <p>
+                        A Python a behúzást (indentation) a hatókörök (scope),
+                        kódblokkok kijelölésére használja.
+                    </p>
+                    <p>
+                        Azt, hogy hány karakteres behúzást használunk, mi
+                        dönthetjük el szabadon.
+                    </p>
+                    <p>Nézzük a következő programot!</p>
+                    <div class="kep">
+                        <img src="./images/kep_019.png" />
+                    </div>
+                    <!-- <div class="kep">
+                        <img src="./images/kep_020.png" />
+                    </div> -->
+                    <p>
+                        Látható, hogy a def-es rész után a következő sorban
+                        behúzás van, azaz új hatókört jelölünk ki. <br />
+                        Ebbe az új hatókörbe csak akkor fog belépni az
+                        értelmező, ha eléri a kiir() kódrészt. Kilépni ebből a
+                        hatókörből csak akkor fog, ha megszűnik a behúzás.
+                        <br />
+                        Előtte és utána a program a fő hatókörében tartozkodik,
+                        ahol nincs behúzás.
+                    </p>
+                    <p>
+                        A BEHÚZÁS ÉRTÉKE MINDIG UGYANANNYI KARAKTER LEGYEN EGY
+                        HATÓKÖRÖN BELÜL! Egyébként új hatókört próbál nyítni az
+                        értelmező!
+                    </p>
+                    <p>Kicsit hosszabb példa.</p>
+                    <div class="kep">
+                        <img src="./images/kep_021.png" />
+                    </div>
+                    <p>
+                        A legtöbb szerkesztő azonnal jelzi, ha hiba van
+                        (IndentationError).
+                    </p>
+                    <div class="kep">
+                        <img src="./images/kep_022.png" />
+                    </div>
+                </div>
+                <div class="forras">
+                    <span class="feladat-lista">Források: </span>
+                    <p>
+                        <a
+                            href="https://www.scientecheasy.com/2022/09/indentation-in-python.html/"
+                            target="_blank"
+                            >Scientech Easy</a
+                        >
+                    </p>
+                    <p>
+                        <a
+                            href="https://www.w3schools.com/python/python_syntax.asp"
+                            target="_blank"
+                            >w3schools</a
+                        >
+                    </p>
+                </div>
+            </div>
+            <div class="belso-container">
+                <h3>Kommentek.</h3>
+                <div class="feladat">
+                    <span class="feladat-lista">Feladat: </span>
+                    <p>
+                        Az interneten keressünk rá a mire lehet használni a
+                        kommenteket és ez nekünk miért jó!
+                    </p>
+                </div>
+                <div class="valasz">
+                    <span class="feladat-lista">Válaszok:</span>
+                    <div class="kep">
+                        <img src="./images/image13.jpg" />
+                    </div>
+                    <p>
+                        Mint minden programozási nyelvben, a Pythonban is van
+                        lehetőség a kommentre. Ehhez a #-jelet használjuk, és az
+                        értelmező az utána következő szöveget figyelmenkívűl
+                        hagyja.
+                    </p>
+                    <p>
+                        A kommenteket használhatjuk emlékeztetők és
+                        figyelmeztetések elhelyezésére. <br />
+                        De kódsorokat is kikommentálhatunk tesztelésképpen.
+                    </p>
+                    <div class="kep">
+                        <img src="./images/kep_023.png" />
+                    </div>
+                    <div class="kep">
+                        <img src="./images/kep_024.png" />
+                    </div>
+                    <p>Többsoros kommentre az alábbi két lehetőség van.</p>
+                    <div class="kep">
+                        <img src="./images/kep_025.png" />
+                    </div>
+                    <div class="kep">
+                        <img src="./images/kep_024.png" />
+                    </div>
+                </div>
+                <div class="forras">
+                    <span class="feladat-lista">Források: </span>
+                    <p>
+                        <a
+                            href="https://www.w3schools.com/python/python_comments.asp"
+                            target="_blank"
+                            >w3schools</a
+                        >
+                    </p>
+                </div>
+            </div>
+            <div class="belso-container">
+                <h3>Mi az a változó?</h3>
+                <div class="feladat">
+                    <span class="feladat-lista">Feladat: </span>
+                    <p>
+                        Az interneten keressünk rá arra, hogy mi a változó és
+                        mire lehet használni!
+                    </p>
+                </div>
+                <div class="valasz">
+                    <span class="feladat-lista">Válaszok:</span>
+                    <div class="kep">
+                        <img src="./images/image14.png" />
+                    </div>
+                    <p>A változók adatértékek tárolására szolgáló tárolók.</p>
+                    <p>
+                        A Pythonnak nincs parancsa a változók deklarálására
+                        (azaz var, let stb. kulcsszavak nem léteznek a
+                        nyelvben).
+                    </p>
+                    <p>
+                        A változó abban a pillanatban jön létre, amikor először
+                        értéket rendelünk hozzá.
+                    </p>
+                    <div class="kep">
+                        <img src="./images/kep_026.png" />
+                    </div>
+                    <p>
+                        A változóknak nem kell semmilyen konkrét típust adni,
+                        ezt a feladatot az interpreter majd megoldja, sőt a
+                        beállításuk után változhat is típus!
+                    </p>
+                    <div class="kep">
+                        <img src="./images/kep_027.png" />
+                    </div>
+                    <div class="kep">
+                        <img src="./images/kep_028.png" />
+                    </div>
+                    <p>
+                        Egy változó típusát a type() függvény segítségével
+                        kaphatjuk meg. <br />
+                        Típusát kasztolással (típuskényszerítéssel)
+                        változtathatjuk meg. (Erről majd később lesz szó.)
+                    </p>
+                    <div class="kep">
+                        <img src="./images/kep_029.png" />
+                    </div>
+                    <div class="kep">
+                        <img src="./images/kep_030.png" />
+                    </div>
+                    <p>
+                        A karakterláncokat legtöbbszö sima (') és dupla (")
+                        idézőjelek közé is rakhatjuk. Ritkán a tripla (''')
+                        idézőjelet is használjuk.
+                    </p>
+                    <p>
+                        A változók kis- és nagybetű érzékenyek. Például: alma ≠
+                        Alma
+                    </p>
+                    <div class="kep">
+                        <img src="./images/kep_031.png" />
+                    </div>
+                    <div class="kep">
+                        <img src="./images/kep_032.png" />
+                    </div>
+                </div>
+                <div class="forras">
+                    <span class="feladat-lista">Források: </span>
+                    <p>
+                        <a
+                            href="https://www.w3schools.com/python/python_variables.asp"
+                            target="_blank"
+                            >w3schools</a
+                        >
+                    </p>
+                </div>
+            </div>
+            <div class="belso-container">
+                <h3>
+                    Mi az az azonosító? Milyen elnevezési szabályokat kell
+                    követnünk?
+                </h3>
+                <div class="feladat">
+                    <span class="feladat-lista">Feladat: </span>
+                    <p>
+                        Az interneten keressünk rá arra, hogy milyen elnevezési
+                        szabályok vannak a különböző programozási nyelvekben!
+                    </p>
+                </div>
+                <div class="valasz">
+                    <span class="feladat-lista">Válaszok:</span>
+                    <div class="kep"><img src="./images/image15.jpg" /></div>
+                    <p>
+                        Az azonósítok (identifer), a változók nevei, csak
+                        betűvel, vagy _-sal kezdődhetnek. SZÁMMAL NEM!
+                    </p>
+                    <p>
+                        Az azonósítok csak alfanumerikus és _-karaktereket
+                        tartalmazhatnak (0-9, a-Z, A-Z, _).
+                    </p>
+                    <p>Nem lehetnek Python kulcsszavak (keyword)!</p>
+                    <div class="kep">
+                        <img src="./images/kep_033.png" />
+                    </div>
+                    <div class="kep">
+                        <img src="./images/kep_034.png" />
+                    </div>
+                    <p>Több szóból álló azonosítók képzése.</p>
+                    <div class="kep">
+                        <img src="./images/kep_035.png" />
+                    </div>
+                </div>
+                <div class="forras">
+                    <span class="feladat-lista">Források: </span>
+                    <p>
+                        <a
+                            href="https://www.w3schools.com/python/python_ref_keywords.asp"
+                            target="_blank"
+                            >w3schools - Python kulcsszavak</a
+                        >
+                    </p>
+                </div>
+            </div>
+            <div class="belso-container">
+                <h3>Mi az a literál?</h3>
+                <div class="feladat">
+                    <span class="feladat-lista">Feladat: </span>
+                    <p>
+                        Az interneten keressünk rá arra, hogy mi az a literál!
+                    </p>
+                </div>
+                <div class="valasz">
+                    <span class="feladat-lista">Válaszok:</span>
+                    <div class="kep">
+                        <img src="./images/image16.png" />
+                    </div>
+                    <p>
+                        A literálok egy programban rögzített fix értékek
+                        reprezentációi. Lehetnek számok, karakterek,
+                        karakterláncok stb.
+                    </p>
+                    <div class="kep">
+                        <img src="./images/kep_042.png" />
+                    </div>
+                </div>
+                <div class="forras">
+                    <span class="feladat-lista">Források: </span>
+                    <p>
+                        <a
+                            href="https://www.programiz.com/python-programming/variables-constants-literals"
+                            target="_blank"
+                            >programiz</a
+                        >
+                    </p>
+                </div>
+            </div>
+            <div class="belso-container">
+                <h3>Értékadás.</h3>
+                <div class="feladat">
+                    <span class="feladat-lista">Feladat: </span>
+                    <p>
+                        Az interneten keressünk rá arra, hogy mi az értékadás
+                        programozási nyelvek esetén!
+                    </p>
+                </div>
+                <div class="valasz">
+                    <span class="feladat-lista">Válaszok:</span>
+                    <div class="kep">
+                        <img src="./images/image17.jpg" />
+                    </div>
+                    <p>
+                        Az értékadás során adatokat helyezünk el a változókba.
+                        Ezek lehetnek literálok vagy más változók is.
+                    </p>
+                    <p>
+                        Helytakarékosság szempontjából fontos, hogy egy sorban
+                        egyszerre több változónak is adhatunk értéket vesszővel
+                        elválasztva. Ügyeljünk, hogy az egyenlőségjel mindkét
+                        oldalán ugyanannyi érték legyen!
+                    </p>
+                    <div class="kep">
+                        <img src="./images/kep_036.png" />
+                    </div>
+                    <div class="kep">
+                        <img src="./images/kep_037.png" />
+                    </div>
+                    <p>
+                        Vagy akár egyszerre több változónak is oda tudom adni
+                        ugyanazt az értéket.
+                    </p>
+                    <div class="kep">
+                        <img src="./images/kep_038.png" />
+                    </div>
+                    <div class="kep">
+                        <img src="./images/kep_039.png" />
+                    </div>
+                    <p>
+                        Egy kicsit előre mutatólag említsük meg a kicsomagolást
+                        (unpacking). Ekkor az adott listából egyenként kivehetem
+                        az értékeket és eltárolhatom változókban.
+                    </p>
+                    <div class="kep">
+                        <img src="./images/kep_040.png" />
+                    </div>
+                    <div class="kep">
+                        <img src="./images/kep_041.png" />
+                    </div>
+                </div>
+            </div>
+            <div class="belso-container">
+                <h3>Változók adattípusai a Pythonban.</h3>
+                <div class="feladat">
+                    <span class="feladat-lista">Feladat: </span>
+                    <p>
+                        Az interneten keressünk rá arra, hogy milyen adattípusok
+                        létezhetnek a programozási nyelvek esetén!
+                    </p>
+                </div>
+                <div class="valasz">
+                    <span class="feladat-lista">Válaszok:</span>
+                    <div class="kep">
+                        <img src="./images/image18.png" />
+                    </div>
+                    <p>
+                        A programozásban az adattípus fontos fogalom. A változók
+                        különböző típusú adatokat tárolhatnak, és a különböző
+                        típusok különböző dolgokat hajthatnak végre.
+                    </p>
+                    <p>
+                        A Python alapértelmezés szerint a következő
+                        adattípusokat tartalmazza a következő kategóriákban.
+                    </p>
+                    <div class="kep">
+                        <img src="./images/kep_043.png" />
+                    </div>
+                    <p>
+                        A Pythonban a változó adattípusát akkor állítja be, ha
+                        értéket rendel hozzá.
+                    </p>
+                    <div class="kep">
+                        <img src="./images/kep_044.png" />
+                    </div>
+                    <p>
+                        Ha konstruktorral (egy speciális függvény) szeretnénk
+                        megadni a típust.
+                    </p>
+                    <div class="kep">
+                        <img src="./images/kep_045.png" />
+                    </div>
+                </div>
+                <div class="forras">
+                    <span class="feladat-lista">Források: </span>
+                    <p>
+                        <a
+                            href="https://www.w3schools.com/python/python_datatypes.asp"
+                            target="_blank"
+                            >w3schools</a
+                        >
+                    </p>
+                </div>
+            </div>
+            <div class="belso-container">
+                <h3>Feladatok megoldásra.</h3>
+                <div class="feladat">
+                    <span class="feladat-lista">Feladat: </span>
+                    <p>
+                        Definiáljunk legalább 20 változót a fenti szabályokat
+                        figyelembevéve!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

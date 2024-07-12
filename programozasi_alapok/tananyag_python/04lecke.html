@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <link
+            rel="stylesheet"
+            href="../../src/stilus.css"
+        />
+        <link
+            rel="shortcut icon"
+            href="../../src/info-bg.png"
+            type="image/x-icon"
+        />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+        />
+        <title>Negyedik lecke - A változók hatóköre, a global kulcsszó</title>
+    </head>
+    <body>
+        <nav>
+            <a href="./index.html">Tananyag Python</a>
+            <a href="#fel">
+                <span class="material-symbols-outlined">stat_3</span>
+            </a>
+        </nav>
+        <span id="fel"></span>
+        <div class="container">
+            <h1>Negyedik lecke - A változók hatóköre, a global kulcsszó</h1>
+            <div class="belso-container">
+                <h3>Mi az a hatókör (scope) változók esetén?</h3>
+                <div class="feladat">
+                    <span class="feladat-lista">Feladat: </span>
+                    <p>
+                        Az interneten keressünk rá milyen hatókörei lehetnek egy
+                        változónak!
+                    </p>
+                </div>
+                <div class="valasz">
+                    <span class="feladat-lista">Válaszok:</span>
+                    <div class="kep">
+                        <img src="./images/image19.jpg" />
+                    </div>
+                    <p>
+                        Egy változó hatókörén azt a kódrészletet értjük, amely
+                        hozzá tud férni, azaz amely módosítani tudja az értékét.
+                        <br />
+                        A fenti ábrából csak kettővel foglalkozunk most.
+                    </p>
+                    <p>
+                        Ha az x-változó hatóköre az egész állomány, ezt hívjuk
+                        főprogramnak, akkor globális-nak nevezzük, tehát bármi
+                        hozzá tud férni.
+                    </p>
+                    <p>Nézzük a következő programot!</p>
+                    <div class="kep">
+                        <img src="./images/kep_046.png" />
+                    </div>
+                    <div class="kep">
+                        <img src="./images/kep_047.png" />
+                    </div>
+                    <p>Látható, hogy a fuggveny() is látja az x-változót.</p>
+                    <p>
+                        Ha az x-változó hatóköre a fuggveny() kódblokkja akkor
+                        lokákis-nak nevezzük, ezt a behúzásból ismerjük fel.
+                    </p>
+                    <div class="kep">
+                        <img src="./images/kep_048.png" />
+                    </div>
+                    <div class="kep">
+                        <img src="./images/kep_047.png" />
+                    </div>
+                    <p>Vizsgáljuk meg következőt.</p>
+                    <div class="kep">
+                        <img src="./images/kep_049.png" />
+                    </div>
+                    <div class="kep">
+                        <img src="./images/kep_050.png" />
+                    </div>
+                    <p>Fontos a két függvény hívásának a sorrendje!</p>
+                    <div class="kep">
+                        <img src="./images/kep_051.png" />
+                    </div>
+                    <div class="kep">
+                        <img src="./images/kep_052.png" />
+                    </div>
+                    <p>
+                        Látható, hogy a lokális x-változóhoz nem tud hozzá férni
+                        a főprogram.
+                    </p>
+                    <p>
+                        Mivel a Python értelmezett nyelv, tehát soronként kerül
+                        kiértékelésre, ezért már a print(x) sem hajtódik végre.
+                    </p>
+                    <p>Nézzük a helyes programot.</p>
+                    <div class="kep">
+                        <img src="./images/kep_053.png" />
+                    </div>
+                    <div class="kep">
+                        <img src="./images/kep_054.png" />
+                    </div>
+                    <p>Fontos a két függvény hívásának a sorrendje!</p>
+                    <div class="kep">
+                        <img src="./images/kep_055.png" />
+                    </div>
+                    <div class="kep">
+                        <img src="./images/kep_056.png" />
+                    </div>
+                    <p>
+                        Figyeljük meg, hogy a globális változó értékét egy
+                        függvényen belül nem tudjuk felülírni! Ehhez a global
+                        kulcsszót kell megadni!
+                    </p>
+                </div>
+                <div class="forras">
+                    <span class="feladat-lista">Források: </span>
+                    <p>
+                        <a
+                            href="https://www.w3schools.com/python/python_variables_global.asp"
+                            target="_blank"
+                            >w3schools</a
+                        >
+                    </p>
+                </div>
+            </div>
+            <div class="belso-container">
+                <h3>global kulcsszó.</h3>
+                <div class="feladat">
+                    <span class="feladat-lista">Feladat: </span>
+                    <p>
+                        Az interneten keressünk rá a mire lehet használni a
+                        global kulcsszót a Python-ban!
+                    </p>
+                </div>
+                <div class="valasz">
+                    <span class="feladat-lista">Válaszok:</span>
+                    <div class="kep">
+                        <img src="./images/image20.png" />
+                    </div>
+                    <p>
+                        Egy függvényen belül létrehozott változót globálissá
+                        tudunk tenni, ha definiálás előtt módosítom a global
+                        kulcsszóval.
+                    </p>
+                    <div class="kep">
+                        <img src="./images/kep_057.png" />
+                    </div>
+                    <div class="kep">
+                        <img src="./images/kep_058.png" />
+                    </div>
+                    <p>
+                        Ha egy lokális és egy globális változó neve ugyanaz,
+                        akkor minden attól függ, hogy mikor dolgozza fel az
+                        értelmező.
+                    </p>
+                    <div class="kep">
+                        <img src="./images/kep_059.png" />
+                    </div>
+                    <div class="kep">
+                        <img src="./images/kep_058.png" />
+                    </div>
+                    <p>
+                        Ebben az esetben, a függvényhívás miatt, a globális
+                        változó előbb kapja meg a lokális értéket mielőtt
+                        kiíratnánk.
+                    </p>
+                    <div class="kep">
+                        <img src="./images/kep_060.png" />
+                    </div>
+                    <div class="kep">
+                        <img src="./images/kep_054.png" />
+                    </div>
+                    <p>Ebben az esetben még nem került sor a felülírásra.</p>
+                </div>
+                <div class="forras">
+                    <span class="feladat-lista">Források: </span>
+                    <p>
+                        <a
+                            href="https://pynative.com/python-global-variables/"
+                            target="_blank"
+                            >pynative</a
+                        >
+                    </p>
+                </div>
+            </div>
+            <div class="belso-container">
+                <h3>Feladatok megoldásra.</h3>
+                <div class="feladat">
+                    <span class="feladat-lista">Feladat: </span>
+                    <p>
+                        Legalább 5 változó viselkedését módosítsuk a global
+                        kulcsszóval. Nézzünk meg minden lehetőséget!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
