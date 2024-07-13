@@ -41,6 +41,47 @@ nav > a {
     height: 8vh;
 }
 
+.tarto {
+    background-color: #575757;
+    border-radius: 5px;
+    box-shadow: 3px 3px 2px #ffffff;
+    margin-bottom: 1em;
+    padding: 1em;
+    margin: auto;
+    min-height: 75vh;
+}
+
+#felso-gombok {
+    display: flex;
+    justify-content: space-between;
+}
+
+#felso-gombok > button {
+    background-color: #000;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.5em;
+    padding: 5px;
+}
+
+#also-gombok > button {
+    background-color: #c00202;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 1em;
+    padding: 5px;
+}
+
+#jo-valaszok {
+    display: none;
+}
+
+#jo-valaszok > ul {
+    list-style-position: inside;
+}
+
 .container {
     background-color: #363636;
     border-radius: 10px;
@@ -79,13 +120,16 @@ nav > a {
     background-color: #696969;
     border-radius: 3px;
     box-shadow: 2px 2px 2px #000;
-    padding: 0.5em;
+    /* padding: 0.5em; */
     margin-bottom: 0.5em;
 }
 
 .container > ol a {
     color: whitesmoke;
+    display: inline-block;
     text-decoration: none;
+    padding: 0.5em;
+    width: 100%;
 }
 
 .belso-container {
@@ -163,6 +207,10 @@ nav > a {
     }
 
     .kep {
+        width: 100%;
+    }
+
+    .tarto img {
         width: 100%;
     }
 }

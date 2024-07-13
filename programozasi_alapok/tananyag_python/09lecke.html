@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <link
+            rel="stylesheet"
+            href="../../src/stilus.css"
+        />
+        <link
+            rel="shortcut icon"
+            href="../../src/info-bg.png"
+            type="image/x-icon"
+        />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+        />
+        <title>
+            Kilencedik lecke - Bitműveletek, bitenkénti operátorok és az
+            operátorok precedencia sorrendje
+        </title>
+    </head>
+    <body>
+        <nav>
+            <a href="./index.html">Tananyag Python</a>
+            <a href="#fel">
+                <span class="material-symbols-outlined">stat_3</span>
+            </a>
+        </nav>
+        <span id="fel"></span>
+        <div class="container">
+            <h1>
+                Kilencedik lecke - Bitműveletek, bitenkénti operátorok és az
+                operátorok precedencia sorrendje
+            </h1>
+            <div class="belso-container">
+                <h3>Logikai értékek, változók.</h3>
+                <div class="feladat">
+                    <span class="feladat-lista">Feladat: </span>
+                    <p>Az interneten keressünk rá a logikai változókra!</p>
+                </div>
+                <div class="valasz">
+                    <span class="feladat-lista">Válaszok:</span>
+                    <div class="kep">
+                        <img src="./images/image26.jpg" />
+                    </div>
+                    <p>
+                        A logikai értékek (boolean) két érték egyikét
+                        képviselik: True vagy False.
+                    </p>
+                    <p>
+                        Bármilyen kifejezést ki lehet értékelni a Pythonban, és
+                        megkaphatjuk a két válasz egyikét, True vagy False.
+                    </p>
+                    <p>
+                        Ha két értéket összehasonlítunk, a kifejezés
+                        kiértékelődik, és a Python egy logikai választ ad
+                        vissza. <br />
+                        A tartalmazást vizsgáló operátor (membership operator)
+                        is boolean értékkel tér vissza.
+                    </p>
+                    <div class="kep">
+                        <img src="./images/kep_100.png" />
+                    </div>
+                    <div class="kep">
+                        <img src="./images/kep_101.png" />
+                    </div>
+                    <p>
+                        Kiértékeléshez használhatjuk még a bool() függvényt,
+                        amely szintén vagy True vagy False. <br />
+                        Bármit odaadhatunk neki. Literált, változót, kifejezést
+                        stb.
+                    </p>
+                    <div class="kep">
+                        <img src="./images/kep_102.png" />
+                    </div>
+                    <div class="kep">
+                        <img src="./images/kep_103.png" />
+                    </div>
+                    <p>
+                        Szinte minden True-ra értékelődik ki, kivéve a
+                        következőket. Minden, ami "üres"!
+                    </p>
+                    <div class="kep">
+                        <img src="./images/kep_104.png" />
+                    </div>
+                    <div class="kep">
+                        <img src="./images/kep_105.png" />
+                    </div>
+                </div>
+                <div class="forras">
+                    <span class="feladat-lista">Források: </span>
+                    <p>
+                        <a
+                            href="https://www.w3schools.com/python/python_booleans.asp"
+                            target="_blank"
+                            >w3schools</a
+                        >
+                    </p>
+                </div>
+            </div>
+            <div class="belso-container">
+                <h3>Összehasonlító operátorok (Comparison Operators).</h3>
+                <div class="feladat">
+                    <span class="feladat-lista">Feladat: </span>
+                    <p>
+                        Az interneten keressünk rá hogyan tudunk
+                        összehasonlítani érékeket!
+                    </p>
+                </div>
+                <div class="valasz">
+                    <span class="feladat-lista">Válaszok:</span>
+                    <div class="kep">
+                        <img src="./images/kep_106.png" />
+                    </div>
+                    <p>
+                        Az összehasonlító operátorokat két érték
+                        összehasonlítására használják. Mindig boolean értékkel
+                        térnek vissza.
+                    </p>
+                    <p>Nézzünk rá néhány példát.</p>
+                    <div class="kep">
+                        <img src="./images/kep_107.png" />
+                    </div>
+                    <div class="kep">
+                        <img src="./images/kep_108.png" />
+                    </div>
+                </div>
+                <div class="forras">
+                    <span class="feladat-lista">Források: </span>
+                    <p>
+                        <a
+                            href="https://www.w3schools.com/python/python_operators.asp"
+                            target="_blank"
+                            >w3schools</a
+                        >
+                    </p>
+                </div>
+            </div>
+            <div class="belso-container">
+                <h3>Feladatok megoldásra.</h3>
+                <div class="feladat">
+                    <span class="feladat-lista">Feladat: </span>
+                    <p>
+                        Legalább 20 értéket értékeljünk ki a bool() függvénnyel,
+                        majd hasonlítsunk össze őket!
+                    </p>
+                </div>
+            </div>
+            <div class="belso-container">
+                <h3>Logikai operátorok (Logical Operators).</h3>
+                <div class="feladat">
+                    <span class="feladat-lista">Feladat: </span>
+                    <p>
+                        Az interneten keressünk rá hogyan tudunk kiértékelni
+                        logikai változokból összerakott kifejezéséket!
+                    </p>
+                </div>
+                <div class="valasz">
+                    <span class="feladat-lista">Válaszok:</span>
+                    <div class="kep">
+                        <img src="./images/kep_109.png" />
+                    </div>
+                    <p>
+                        A logikai operátorokat két vagy több logikai érték, mint
+                        operandusok, összekapcsolására használják. Mindig
+                        boolean értékkel térnek vissza.
+                    </p>
+                    <p>Nézzünk rá néhány példát.</p>
+                    <div class="kep">
+                        <img src="./images/kep_110.png" />
+                    </div>
+                    <div class="kep">
+                        <img src="./images/kep_111.png" />
+                    </div>
+                </div>
+                <div class="forras">
+                    <span class="feladat-lista">Források: </span>
+                    <p>
+                        <a
+                            href="https://www.w3schools.com/python/python_operators.asp"
+                            target="_blank"
+                            >w3schools</a
+                        >
+                    </p>
+                </div>
+            </div>
+
+            <div class="belso-container">
+                <h3>Feladatok megoldásra.</h3>
+                <div class="feladat">
+                    <span class="feladat-lista">Feladat: </span>
+                    <p>
+                        Legalább 20 logikai értéket kössünk össze a logikai
+                        operátorokkal és értékeljük ki az így kapott
+                        kifejezéseket!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
