@@ -51,13 +51,19 @@ nav > a {
     min-height: 75vh;
 }
 
+#tartalom h3 {
+    margin-bottom: 0.5em;
+}
+
 #felso-gombok {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 1em;
 }
 
 #felso-gombok > button {
-    background-color: #000;
+    background-color: #302e92;
+    box-shadow: 2px 2px 2px black;
     border: none;
     border-radius: 10px;
     color: white;
@@ -65,8 +71,14 @@ nav > a {
     padding: 5px;
 }
 
+#also-gombok {
+    margin-bottom: 0.5em;
+    margin-top: 1em;
+}
+
 #also-gombok > button {
-    background-color: #c00202;
+    background-color: #be0000;
+    box-shadow: 2px 2px 2px black;
     border: none;
     border-radius: 10px;
     color: white;
@@ -211,6 +223,6 @@ nav > a {
     }
 
     .tarto img {
-        width: 100%;
+        max-width: 100%;
     }
 }

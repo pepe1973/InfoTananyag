@@ -19,7 +19,7 @@
             rel="stylesheet"
             href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
         />
-        <title>Ötödik lecke - A print() függvény</title>
+        <title>A print() és az input() függvény</title>
     </head>
     <body>
         <nav>
@@ -30,7 +30,7 @@
         </nav>
         <span id="fel"></span>
         <div class="container">
-            <h1>Ötödik lecke - A print() függvény</h1>
+            <h1>A print() és az input() függvény</h1>
             <div class="belso-container">
                 <h3>Mire jó a print() függvény?</h3>
                 <div class="feladat">
@@ -76,6 +76,37 @@
                     </div>
                     <div class="kep">
                         <img src="./images/kep_064.png" />
+                    </div>
+                    <p>
+                        Ha a kiírandó adat nem string típusú, akkor
+                        automatikusan átalakítja karakterlánccá a kiíráshoz, de
+                        meghagyja a típusát.
+                    </p>
+                    <div class="kep">
+                        <img src="./images/kep_131.png" />
+                    </div>
+                    <div class="kep">
+                        <img src="./images/kep_132.png" />
+                    </div>
+                    <p>
+                        De ha egy karakterláncot összekonkatenálok egy egész
+                        számmal, akkor már hibát kapok.
+                    </p>
+                    <div class="kep">
+                        <img src="./images/kep_133.png" />
+                    </div>
+                    <div class="kep">
+                        <img src="./images/kep_134.png" />
+                    </div>
+                    <p>
+                        Ilyenkor kell ismételten használni a típuskényszerítést,
+                        kasztolást az str() függvény segítségével.
+                    </p>
+                    <div class="kep">
+                        <img src="./images/kep_135.png" />
+                    </div>
+                    <div class="kep">
+                        <img src="./images/kep_136.png" />
                     </div>
                 </div>
                 <div class="forras">
@@ -142,6 +173,56 @@
                     <p>
                         Írassunk ki legalább 10 karakterláncsorozatot különböző
                         sep és end karaktereket használva!
+                    </p>
+                </div>
+            </div>
+            <div class="belso-container">
+                <h3>Mire jó az input() függvény?</h3>
+                <div class="feladat">
+                    <span class="feladat-lista">Feladat: </span>
+                    <p>Az interneten keressünk rá mi a felhasználói input!</p>
+                </div>
+                <div class="valasz">
+                    <span class="feladat-lista">Válaszok:</span>
+                    <div class="kep">
+                        <img src="./images/python03.jpg" />
+                    </div>
+                    <p>
+                        A Python eredetileg csak konzolos alkalmazások írására
+                        volt alkalmas, ahol a szabvány bemenet (standard input)
+                        is a konzol. <br />
+                        A felhasználói inputra, adatbekérésre az input()
+                        függvényt használja.
+                    </p>
+                    <p>
+                        Az input() függvény a paramétereit kiírja a konzolra, és
+                        a kurzort beállítja utána, várva a felhasználói
+                        adatbevitelre.
+                    </p>
+                    <p>
+                        A program futása mindaddig áll, amíg a felhasználó nem
+                        üt egy Enter-t.
+                    </p>
+                    <p>
+                        Az input() függvény mindig karakterlánc (string) értéket
+                        ad vissza feldolgozásra. Ezt egy változóban szoktuk
+                        eltárolni későbbi feldolgozásra.
+                    </p>
+                    <div class="kep">
+                        <img src="./images/kep_112.png" />
+                    </div>
+                    <div class="kep">
+                        <img src="./images/kep_113.png" />
+                    </div>
+                </div>
+                <div class="forras">
+                    <span class="feladat-lista">Források: </span>
+                    <p>
+                        <a
+                            href="https://www.geeksforgeeks.org/python-input-function/"
+                            target="_blank"
+                            >geeksforgeeks</a
+                        >
                     </p>
                 </div>
             </div>

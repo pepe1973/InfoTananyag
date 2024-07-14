@@ -25,7 +25,7 @@ function elsoCheckBeir(tomb) {
     szoveg += `<h4>Helyes Válaszok</h4>`;
     szoveg += '<ul>';
     for (let i = 0; i < tomb[0].helyesValaszok.length; i++) {
-        szoveg += `<li>${tomb[0].valaszok[i]}</li>`;
+        szoveg += `<li>${tomb[0].helyesValaszok[i]}</li>`;
     }
     szoveg += '</ul>';
     szoveg += `</div>`;

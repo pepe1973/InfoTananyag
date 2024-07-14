@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <link
+            rel="stylesheet"
+            href="../../src/stilus.css"
+        />
+        <link
+            rel="shortcut icon"
+            href="../../src/info-bg.png"
+            type="image/x-icon"
+        />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+        />
+        <title>Kifejezések és az operátorok precedencia sorrendje</title>
+    </head>
+    <body>
+        <nav>
+            <a href="./index.html">Tananyag Python</a>
+            <a href="#fel">
+                <span class="material-symbols-outlined">stat_3</span>
+            </a>
+        </nav>
+        <span id="fel"></span>
+        <div class="container">
+            <h1>Kifejezések és az operátorok precedencia sorrendje</h1>
+            <div class="belso-container">
+                <h3>Kifejezések (expressions).</h3>
+                <div class="feladat">
+                    <span class="feladat-lista">Feladat: </span>
+                    <p>Az interneten keressünk rá mik azok a kifejezések!</p>
+                </div>
+                <div class="valasz">
+                    <span class="feladat-lista">Válaszok:</span>
+                    <div class="kep">
+                        <img src="./images/image27.jpg" />
+                    </div>
+                    <p>
+                        Egy kifejezés (expression) operátorok és operandusok
+                        kombinációja, amelyet úgy értelmezünk, hogy valamilyen
+                        más értéket hozzon létre.
+                    </p>
+                    <p>
+                        Konstans kifejezés (Constant Expressions). Ekkor az
+                        operandusok literálok.
+                    </p>
+                    <p>
+                        Számtani kifejezés (Arithmetic Expressions). Aritmetikai
+                        operátorokból, zárójelekből, szám típusú változókból és
+                        literálokból felépített kifejezések.
+                    </p>
+                    <p>
+                        Egész értékű kifejezés (Integral Expressions). Olyan
+                        kifejezések, melyek egész értéket határoznak meg.
+                        Használhatunk típus konverziót is!
+                    </p>
+                    <p>
+                        Lebegőpontos kifejezés (Integral Expressions). Olyan
+                        kifejezések, melyek lebegőpontos értéket határoznak meg.
+                        Használhatunk típus konverziót is!
+                    </p>
+                    <div class="kep">
+                        <img src="./images/kep_127.png" />
+                    </div>
+                    <p>
+                        Relációs kifejezés (Relational Expressions). Olyan
+                        kifejezések, amelyekben számtani kifejezéseket
+                        hasonlítunk össze összehasonlító operátorokkal! Mindig
+                        boolean értékkel tér vissza!
+                    </p>
+                    <p>
+                        Logikai kifejezés (Logical Expressions). Olyan
+                        kifejezések, amelyeket logikai operátorok segítségével
+                        állítunk össze. Mindig boolean értékkel tér vissza!
+                    </p>
+                    <p>
+                        Bitenkénti kifejezés (Bitwise Expressions). Olyan
+                        kifejezések, amelyeket bitenkénti operátorok
+                        segítségével állítunk össze.
+                    </p>
+                    <p>
+                        Kombinációs kifejezés (Combination Expressions). Olyan
+                        kifejezések, amelyekben a különböző operátorok
+                        keverhetőek!
+                    </p>
+                    <div class="kep">
+                        <img src="./images/kep_128.png" />
+                    </div>
+                </div>
+                <div class="forras">
+                    <span class="feladat-lista">Források: </span>
+                    <p>
+                        <a
+                            href="https://www.geeksforgeeks.org/expressions-in-python/"
+                            target="_blank"
+                            >geeksforgeeks</a
+                        >
+                    </p>
+                </div>
+            </div>
+            <div class="belso-container">
+                <h3>Feladatok megoldásra.</h3>
+                <div class="feladat">
+                    <span class="feladat-lista">Feladat: </span>
+                    <p>
+                        Legalább 4 darab kifejezést hozzunk létre minden
+                        típusból!
+                    </p>
+                </div>
+            </div>
+            <div class="belso-container">
+                <h3>Operátorok precedencia sorrendje.</h3>
+                <div class="feladat">
+                    <span class="feladat-lista">Feladat: </span>
+                    <p>
+                        Az interneten keressünk rá mi az a precedencia sorrend!
+                    </p>
+                </div>
+                <div class="valasz">
+                    <span class="feladat-lista">Válaszok:</span>
+                    <div class="kep">
+                        <img src="./images/kep_126.png" />
+                    </div>
+                    <p>
+                        Egy kifejezés eredményének lekérése meglehetősen
+                        egyszerű folyamat, ha egy kifejezésben csak egy operátor
+                        van. De ha egy kifejezésben egynél több operátor van, az
+                        a végrehajtott operátorok sorrendje alapján eltérő
+                        eredményt adhat. <br />
+                        E zavarok kiküszöbölésére az operátorok kiértékelési
+                        sorrendjét meghatározzuk.
+                    </p>
+                    <p>
+                        Ez egyszerűen meghatározza az operátorok prioritását,
+                        hogy melyik operátort kell előbb végrehajtani.
+                    </p>
+                    <div class="kep">
+                        <img src="./images/kep_129.png" />
+                    </div>
+                    <div class="kep">
+                        <img src="./images/kep_130.png" />
+                    </div>
+                </div>
+                <div class="forras">
+                    <span class="feladat-lista">Források: </span>
+                    <p>
+                        <a
+                            href="https://www.geeksforgeeks.org/expressions-in-python/"
+                            target="_blank"
+                            >geeksforgeeks</a
+                        >
+                    </p>
+                </div>
+            </div>
+            <div class="belso-container">
+                <h3>Feladatok megoldásra.</h3>
+                <div class="feladat">
+                    <span class="feladat-lista">Feladat: </span>
+                    <p>
+                        Legalább 10 darab kifejezést hozzunk létre a precedencia
+                        sorrend gyakorlására!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
