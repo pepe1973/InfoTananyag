@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <link
+            rel="stylesheet"
+            href="../../src/stilus.css"
+        />
+        <link
+            rel="shortcut icon"
+            href="../../src/info-bg.png"
+            type="image/x-icon"
+        />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+        />
+        <title>A for-ciklus és a range() függvény</title>
+    </head>
+    <body>
+        <nav>
+            <a href="./index.html">Tananyag Python</a>
+            <a href="#fel">
+                <span class="material-symbols-outlined">stat_3</span>
+            </a>
+        </nav>
+        <span id="fel"></span>
+        <div class="container">
+            <h1>A for-ciklus és a range() függvény</h1>
+            <div class="belso-container">
+                <h3>for-ciklus.</h3>
+                <div class="feladat">
+                    <span class="feladat-lista">Feladat: </span>
+                    <p>Az interneten keressünk rá mik azok a ciklusok!</p>
+                </div>
+                <div class="valasz">
+                    <span class="feladat-lista">Válaszok:</span>
+                    <div class="kep">
+                        <img src="./images/Python-for-loop.png" />
+                    </div>
+                    <p>
+                        Egy for-ciklussal egy indexálható (sorszámozható)
+                        objektum elemein tudok végimenni egyenként. <br />
+                        Mivel még csak egy ilyen objektumot ismerünk és az a
+                        karakterlánc (string), ezt fogjunk vizsgálni.
+                    </p>
+                    <div class="kep">
+                        <img src="./images/kep_166.png" />
+                    </div>
+                    <div class="kep">
+                        <img src="./images/kep_167.png" />
+                    </div>
+                    <p>Egyenként kivesszük a karaktereket és kiíratjuk őket.</p>
+                    <p>
+                        Ha a ciklus lefutása előtt ki akarunk lépni, akkor a
+                        break-utasítást kell használnunk.
+                    </p>
+                    <div class="kep">
+                        <img src="./images/kep_168.png" />
+                    </div>
+                    <div class="kep">
+                        <img src="./images/kep_169.png" />
+                    </div>
+                    <p>Figyeljünk az utasítások sorrendjére!</p>
+                    <div class="kep">
+                        <img src="./images/kep_170.png" />
+                    </div>
+                    <div class="kep">
+                        <img src="./images/kep_171.png" />
+                    </div>
+                    <p>
+                        Ha ki akarunk hagyni egy (vagy több) ciklust
+                        (iteration), akkor jön jól a continue-utasítás. Utána
+                        folytatodik a ciklus!
+                    </p>
+                    <div class="kep">
+                        <img src="./images/kep_172.png" />
+                    </div>
+                    <div class="kep">
+                        <img src="./images/kep_173.png" />
+                    </div>
+                    <p>Akár többször is kihagyhatunk egy karaktert!</p>
+                    <div class="kep">
+                        <img src="./images/kep_174.png" />
+                    </div>
+                    <div class="kep">
+                        <img src="./images/kep_175.png" />
+                    </div>
+                    <p>
+                        Ha már elfogytak a karakterek, akkor ki tudunk még
+                        íratni egy üzenetet az else-utasítás segítségével.
+                    </p>
+                    <div class="kep">
+                        <img src="./images/kep_176.png" />
+                    </div>
+                    <div class="kep">
+                        <img src="./images/kep_177.png" />
+                    </div>
+                    <p>A break és else utasítások együtt nem működnek!</p>
+                    <div class="kep">
+                        <img src="./images/kep_178.png" />
+                    </div>
+                    <div class="kep">
+                        <img src="./images/kep_179.png" />
+                    </div>
+                    <p>A for-ciklusok egymásba ágyazhatóak!</p>
+                    <div class="kep">
+                        <img src="./images/kep_180.png" />
+                    </div>
+                    <div class="kep">
+                        <img src="./images/kep_181.png" />
+                    </div>
+                </div>
+                <div class="forras">
+                    <span class="feladat-lista">Források: </span>
+                    <p>
+                        <a
+                            href="https://www.w3schools.com/python/python_for_loops.asp"
+                            target="_blank"
+                            >w3schools</a
+                        >
+                    </p>
+                </div>
+            </div>
+            <div class="belso-container">
+                <h3>range() függvény.</h3>
+                <div class="feladat">
+                    <span class="feladat-lista">Feladat: </span>
+                    <p>Az interneten keressünk rá mi az a range() függvény!</p>
+                </div>
+                <div class="valasz">
+                    <span class="feladat-lista">Válaszok:</span>
+                    <div class="kep">
+                        <img src="./images/range.jpg" />
+                    </div>
+                    <p>
+                        Megkönnyíti az elemek bejárását, ha azt számozott
+                        index-szel tesszük. Ehhez tud hasznos lenni a
+                        range()-függvény. <br />
+                        Ha csak egy paramétere van, akkor azt mondjuk meg meddig
+                        menjek 0-tól. A szám a lépések számát jelöli és nem az
+                        utolsó index-et! Az mindig eggyel kisebb a lépések
+                        számánál!
+                        <br />Ebben az esetben a karakterlánc végéig megyünk.
+                    </p>
+                    <div class="kep">
+                        <img src="./images/kep_186.png" />
+                    </div>
+                    <div class="kep">
+                        <img src="./images/kep_167.png" />
+                    </div>
+                    <p>
+                        Ha két paraméter adott, akkor be tudom állítani a kezdő
+                        index-et is.
+                    </p>
+                    <div class="kep">
+                        <img src="./images/kep_187.png" />
+                    </div>
+                    <div class="kep">
+                        <img src="./images/kep_188.png" />
+                    </div>
+                    <p>
+                        Három paraméter esetén az első szám a kezdő index, a
+                        második ameddig el szeretnék menni index + 1, a harmadik
+                        a lépsszám.
+                    </p>
+                    <div class="kep">
+                        <img src="./images/kep_189.png" />
+                    </div>
+                    <div class="kep">
+                        <img src="./images/kep_190.png" />
+                    </div>
+                </div>
+                <div class="forras">
+                    <span class="feladat-lista">Források: </span>
+                    <p>
+                        <a
+                            href="https://www.w3schools.com/python/python_for_loops.asp"
+                            target="_blank"
+                            >w3schools</a
+                        >
+                    </p>
+                </div>
+            </div>
+            <div class="belso-container">
+                <h3>Feladatok megoldásra.</h3>
+                <div class="feladat">
+                    <span class="feladat-lista">Feladat: </span>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
