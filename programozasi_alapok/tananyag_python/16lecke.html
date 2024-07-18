@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <link
+            rel="stylesheet"
+            href="../../src/stilus.css"
+        />
+        <link
+            rel="shortcut icon"
+            href="../../src/info-bg.png"
+            type="image/x-icon"
+        />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+        />
+        <title>
+            Karakterláncok formázása, modulo operátor (%), format() metódus,
+            f-string
+        </title>
+    </head>
+    <body>
+        <nav>
+            <a href="./index.html">Tananyag Python</a>
+            <a href="#fel">
+                <span class="material-symbols-outlined">stat_3</span>
+            </a>
+        </nav>
+        <span id="fel"></span>
+        <div class="container">
+            <h1>
+                Karakterláncok formázása, modulo operátor (%), format() metódus,
+                f-string
+            </h1>
+            <div class="belso-container">
+                <h3>Python modulo string.</h3>
+                <div class="feladat">
+                    <span class="feladat-lista">Feladat: </span>
+                    <p>
+                        Az interneten keressünk rá hogyan tudjuk formázni a
+                        karakterláncokat!
+                    </p>
+                </div>
+                <div class="valasz">
+                    <span class="feladat-lista">Válaszok:</span>
+                    <div class="kep">
+                        <img src="./images/python04.png" />
+                    </div>
+                    <p>
+                        Karakterláncok esetében szükséges lehet olyan adatok
+                        beírása, amelyek csak későbbi számítások után lesznek
+                        elérhetőek. <br />Valamint speciális karakterekre is
+                        szükség lehet. <br />Ezért is van szükség a különböző
+                        módszerekre a sztringek formázására.
+                    </p>
+                    <p>Klasszikus módszer a modulo operátorral (%).</p>
+                    <p>Ennek a módszernek a szintaxisa.</p>
+                    <div class="kep">
+                        <img src="./images/kep_281.png" />
+                    </div>
+                    <p>
+                        Mi az a Conversion Specifier (kb. átalakitás pontosító)?
+                    </p>
+                    <div class="kep">
+                        <img src="./images/kep_282.png" />
+                    </div>
+                    <p>Típusok.</p>
+                    <div class="kep">
+                        <img src="./images/kep_283.png" />
+                    </div>
+                    <p>
+                        Példák az típusokra, amiket legtöbbször használunk.
+                        <br />
+                        Ha csak egy értéket akarunk beilleszteni, akkor nem kell
+                        a zárójel.
+                    </p>
+                    <div class="kep">
+                        <img src="./images/kep_284.png" />
+                    </div>
+                    <div class="kep">
+                        <img src="./images/kep_285.png" />
+                    </div>
+                    <p>Műveleteket is végezhetünk az adatokkal.</p>
+                    <div class="kep">
+                        <img src="./images/kep_304.png" />
+                    </div>
+                    <div class="kep">
+                        <img src="./images/kep_303.png" />
+                    </div>
+                    <p>A vízszintes igazítás.</p>
+                    <div class="kep">
+                        <img src="./images/kep_286.png" />
+                    </div>
+
+                    <p>
+                        width: hány karaktert használhat fel az érték. Ha
+                        kevesebb, mint az adat hossza, akkor nincs hatása, ha
+                        több, akkor szóközöket rak be az elejére. <br />Mindig
+                        jobb oldalra zár, ha kevesebb a karakter!
+                    </p>
+                    <div class="kep">
+                        <img src="./images/kep_287.png" />
+                    </div>
+                    <div class="kep">
+                        <img src="./images/kep_288.png" />
+                    </div>
+                    <p>
+                        precision: hány tizedesjegyre kerekítsük a lebegőpontos
+                        számokat. Karakterláncok esetén az elejétől
+                        felhasználható karakterek száma. <br />Használhatjuk a
+                        *-helykitöltő (placeholder) karaktert is.
+                    </p>
+                    <div class="kep">
+                        <img src="./images/kep_289.png" />
+                    </div>
+                    <div class="kep">
+                        <img src="./images/kep_290.png" />
+                    </div>
+                    <p>Jelölők (flags).</p>
+                    <div class="kep">
+                        <img src="./images/kep_291.png" />
+                    </div>
+                    <p>Példák a #-jelölőre.</p>
+                    <div class="kep">
+                        <img src="./images/kep_292.png" />
+                    </div>
+                    <div class="kep">
+                        <img src="./images/kep_293.png" />
+                    </div>
+                    <p>
+                        Példák a (0, -)-jelölőkre. 0-kal való feltöltés és balra
+                        igazítás.
+                    </p>
+                    <div class="kep">
+                        <img src="./images/kep_294.png" />
+                    </div>
+                    <div class="kep">
+                        <img src="./images/kep_295.png" />
+                    </div>
+                    <p>
+                        Példák a (+, ' ')-jelölőkre. +-jel a pozitív számok elé
+                        és szóköz az adat elé.
+                    </p>
+                    <div class="kep">
+                        <img src="./images/kep_296.png" />
+                    </div>
+                    <div class="kep">
+                        <img src="./images/kep_297.png" />
+                    </div>
+                </div>
+
+                <div class="forras">
+                    <span class="feladat-lista">Források: </span>
+                    <p>
+                        <a
+                            href="https://realpython.com/python-modulo-string-formatting/"
+                            target="_blank"
+                            >Real Python - Modulo String</a
+                        >
+                    </p>
+                    <p>
+                        <a
+                            href="https://realpython.com/python-string-formatting/#formatting-strings-with-the-modulo-operator"
+                            target="_blank"
+                            >Real Python - Formatting</a
+                        >
+                    </p>
+                </div>
+            </div>
+            <div class="belso-container">
+                <h3>format() metódus.</h3>
+                <div class="feladat">
+                    <span class="feladat-lista">Feladat: </span>
+                    <p>
+                        Az interneten keressünk rá mit lehet tudni az
+                        str.format() metódusról!
+                    </p>
+                </div>
+                <div class="valasz">
+                    <span class="feladat-lista">Válaszok:</span>
+                    <div class="kep">
+                        <img src="./images/image33.png" />
+                    </div>
+                    <p>
+                        Ebben az esetben {}-zárójeleket (placeholder) használok
+                        a %-jel helyett, és a stringhez felhasználom a format()
+                        metódust.
+                    </p>
+                    <div class="kep">
+                        <img src="./images/kep_298.png" />
+                    </div>
+                    <div class="kep">
+                        <img src="./images/kep_299.png" />
+                    </div>
+                    <p>
+                        Kétfajta módon kaphatja meg a zárójel az értéket.
+                        <br />Kulcsszóval (Keyword) <br />Pozícióra mutatással
+                        (Position)
+                    </p>
+                    <div class="kep">
+                        <img src="./images/kep_300.png" />
+                    </div>
+                    <div class="kep">
+                        <img src="./images/kep_301.png" />
+                    </div>
+                    <p>Műveleteket is végezhetünk az adatokkal.</p>
+                    <div class="kep">
+                        <img src="./images/kep_302.png" />
+                    </div>
+                    <div class="kep">
+                        <img src="./images/kep_303.png" />
+                    </div>
+                    <p>A Conversion Specifier nagyon hasonló.</p>
+                    <div class="kep">
+                        <img src="./images/kep_305.png" />
+                    </div>
+                    <p>Példák.</p>
+                    <div class="kep">
+                        <img src="./images/kep_306.png" />
+                    </div>
+                    <div class="kep">
+                        <img src="./images/kep_307.png" />
+                    </div>
+                </div>
+
+                <div class="forras">
+                    <span class="feladat-lista">Források: </span>
+                    <p>
+                        <a
+                            href="https://www.educba.com/python-format-function/"
+                            target="_blank"
+                            >educba</a
+                        >
+                    </p>
+                    <p>
+                        <a
+                            href="https://realpython.com/python-string-formatting/#formatting-strings-with-the-modulo-operator"
+                            target="_blank"
+                            >Real Python - Formatting</a
+                        >
+                    </p>
+                    <p>
+                        <a
+                            href="https://www.w3schools.com/python/ref_string_format.asp"
+                            target="_blank"
+                            >w3schools - Formatting</a
+                        >
+                    </p>
+                </div>
+            </div>
+            <div class="belso-container">
+                <h3>f-string.</h3>
+                <div class="feladat">
+                    <span class="feladat-lista">Feladat: </span>
+                    <p>
+                        Az interneten keressünk rá mit lehet tudni az
+                        f-string-ről!
+                    </p>
+                </div>
+                <div class="valasz">
+                    <span class="feladat-lista">Válaszok:</span>
+                    <div class="kep">
+                        <img src="./images/image34.jpg" />
+                    </div>
+                    <p>
+                        Az f-string a Python 3.6 verzóval jelenik meg. Most ez a
+                        legelterjedtebb.
+                    </p>
+                    <p>
+                        Ebben az esetben szintén a szöveg egy részét tudom
+                        formázni a {}-zárójelek (placeholder) segítségével. De
+                        előtte egy f-betűt kell a karakterlánc elé írni.
+                        <br />Innentől kezdve, a format() paraméterei
+                        belekerülnek a {}-kbe és ott hajthatjuk végre rajtuk a
+                        műveleteket.
+                    </p>
+                    <div class="kep">
+                        <img src="./images/kep_308.png" />
+                    </div>
+                    <div class="kep">
+                        <img src="./images/kep_309.png" />
+                    </div>
+                    <p>
+                        Függvényeket és beépített metódusokat is használhatunk
+                        benne. <br />
+                        Sőt akár a később tanulandó if-szerkezetet is.
+                    </p>
+                    <div class="kep">
+                        <img src="./images/kep_310.png" />
+                    </div>
+                    <div class="kep">
+                        <img src="./images/kep_311.png" />
+                    </div>
+                </div>
+
+                <div class="forras">
+                    <span class="feladat-lista">Források: </span>
+                    <p>
+                        <a
+                            href="https://www.educba.com/f-string-in-python/"
+                            target="_blank"
+                            >educba</a
+                        >
+                    </p>
+                    <p>
+                        <a
+                            href="https://www.w3schools.com/python/python_string_formatting.asp"
+                            target="_blank"
+                            >w3schools</a
+                        >
+                    </p>
+                </div>
+            </div>
+            <div class="belso-container">
+                <h3>Feladatok megoldásra.</h3>
+                <div class="feladat">
+                    <span class="feladat-lista">Feladat: </span>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
