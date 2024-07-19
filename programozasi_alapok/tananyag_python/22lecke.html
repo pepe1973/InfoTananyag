@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <link
+            rel="stylesheet"
+            href="../../src/stilus.css"
+        />
+        <link
+            rel="shortcut icon"
+            href="../../src/info-bg.png"
+            type="image/x-icon"
+        />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+        />
+        <title>
+            Függvények (function) és metódusok (method), rekurzív függvény,
+            lambda függvény
+        </title>
+    </head>
+    <body>
+        <nav>
+            <a href="./index.html">Tananyag Python</a>
+            <a href="#fel">
+                <span class="material-symbols-outlined">stat_3</span>
+            </a>
+        </nav>
+        <span id="fel"></span>
+        <div class="container">
+            <h1>
+                Függvények (function) és metódusok (method), rekurzív függvény,
+                lambda függvény
+            </h1>
+            <div class="belso-container">
+                <h3>Karakkódolás.</h3>
+                <div class="feladat">
+                    <span class="feladat-lista">Feladat: </span>
+                    <p>
+                        Az interneten keressünk rá hogy mit jelent a függvény a
+                        programozásban!
+                    </p>
+                </div>
+                <div class="valasz">
+                    <span class="feladat-lista">Válaszok:</span>
+                    <div class="kep">
+                        <img src="./images/image41.png" />
+                    </div>
+                    <p>
+                        A függvény egy kódblokk, amely csak akkor fut le, amikor
+                        meghívják.
+                    </p>
+                    <p>
+                        Függvény vagy metódus? <br />Minden metódus függvény, de
+                        nem minden függvény metódus. <br />
+                        Ezt alatt azt kell érteni, hogy a függvényorientált
+                        programozásban mindent függvényekbe írunk, míg az
+                        objektumorientált programozásban már inkább mint az
+                        osztály egy elemeként, azaz metódusként hivatkozunk
+                        rájuk.
+                        <br />
+                        Tiszta OOP-ben nincs olyan fogalom, hogy függvény, mert
+                        minden osztályokban van, de még elég sokan használják a
+                        metódus szinonímájaként.
+                    </p>
+                    <div class="kep">
+                        <img src="./images/kep_381.png" />
+                    </div>
+                    <div class="kep">
+                        <img src="./images/kep_382.png" />
+                    </div>
+                    <p>Példa.</p>
+                    <div class="kep">
+                        <img src="./images/image53.png" />
+                    </div>
+                    <p>
+                        Paramétereknek nevezett adatokat átadhatunk át egy
+                        függvénynek.
+                        <br />
+                        Ennek eredményeként a függvény adatokat adhat vissza.
+                        <br />HA NINCS IS PARAMÉTER KÖTELEZŐ A ZÁRÓJEL!
+                    </p>
+                    <p>
+                        A Python-ban egy függvényt a def-kulcsszóval hozunk
+                        létre.
+                        <br />Meghívni a nevével és az argumentumokkal (átadott
+                        paraméterértékek) tudjuk. <br />HA NINCS IS ARGUMENTUM
+                        KÖTELEZŐ A ZÁRÓJEL!
+                    </p>
+                    <div class="kep">
+                        <img src="./images/kep_327.png" />
+                    </div>
+                    <div class="kep">
+                        <img src="./images/kep_328.png" />
+                    </div>
+                    <p>
+                        A függvény szempontjából: <br />
+                        A paraméter a függvénydefinícióban zárójelben szereplő
+                        változó. <br />
+                        Az argumentum az az érték, amelyet a függvény a
+                        meghívásakor kap.
+                        <br />A PARAMÉTEREK ÉS ARGUMENTUMOK SZÁMÁNAK MEG KELL
+                        EGYEZNIE! <br />Ha az argumentumokat vesszővel
+                        elválasztva sorolom fel, akkor pozíció szerinti
+                        argumentumokról (Positional Arguments) beszélünk.
+                    </p>
+                    <div class="kep">
+                        <img src="./images/kep_329.png" />
+                    </div>
+                    <div class="kep">
+                        <img src="./images/kep_330.png" />
+                    </div>
+                    <p>
+                        A tetszőleges paraméterek (Arbitrary Arguments - *args).
+                        <br />
+                        Ha nem tudjuk, hogy hány argumentum kerül átadásra a
+                        függvénybe, adjunk meg egy * jelet a paraméter neve
+                        előtt a függvénydefinícióban.
+                        <br />
+                        Így a függvény egy sor (tuple) argumentumot kap , és
+                        ennek megfelelően férhet hozzá az elemekhez.
+                    </p>
+                    <div class="kep">
+                        <img src="./images/kep_331.png" />
+                    </div>
+                    <div class="kep">
+                        <img src="./images/kep_328.png" />
+                    </div>
+                    <p>
+                        A kulcsszavas paraméterek (Keyword Arguments - kwargs).
+                        <br />Ebben az esetben az argumentumokat kulcs = érték
+                        párokban adjuk meg. <br />
+                        A sorrendjük nem számít!
+                    </p>
+                    <div class="kep">
+                        <img src="./images/kep_332.png" />
+                    </div>
+                    <div class="kep">
+                        <img src="./images/kep_333.png" />
+                    </div>
+                    <p>
+                        A tetszőleges kulcsszavas paraméterek (Arbitrary Keyword
+                        Arguments - **kwargs).
+                        <br />Ha nem tudjuk, hogy hány kulcsszavas argumentum
+                        kerül átadásra a függvénybe, adjunk meg egy ** jelet a
+                        paraméter neve előtt a függvénydefinícióban.
+                        <br />
+                        Így a függvény egy könyvtár (dictionary) argumentumot
+                        kap , és ennek megfelelően férhet hozzá az elemekhez.
+                    </p>
+                    <div class="kep">
+                        <img src="./images/kep_334.png" />
+                    </div>
+                    <div class="kep">
+                        <img src="./images/kep_333.png" />
+                    </div>
+                    <p>
+                        Az alapértelmezett paraméterek (Default Parameters).
+                        <br />Ha a függvényt argumentum nélkül hívjuk meg, akkor
+                        az alapértelmezett paraméteret (kulcs = érték)
+                        használja.
+                    </p>
+                    <div class="kep">
+                        <img src="./images/kep_335.png" />
+                    </div>
+                    <div class="kep">
+                        <img src="./images/kep_336.png" />
+                    </div>
+                    <p>
+                        A paraméter és az argumentum adattípusának meg kell
+                        egyezni. Ha a paraméter sztring (lista stb.), akkor az
+                        argumentumnak is sztringnek (lista stb.) kell lennie!
+                    </p>
+                    <div class="kep">
+                        <img src="./images/kep_337.png" />
+                    </div>
+                    <div class="kep">
+                        <img src="./images/kep_328.png" />
+                    </div>
+                    <p>
+                        A függvény visszatérési értéke. <br />A függvény
+                        kódblokkja végre szokott hajtani egy feladatot, aminek
+                        az eredményét később szeretnénk máshol is felhasználni.
+                        Ilyenkor használjuk a return kulcstót, amivel ezt a
+                        program tudomására hozzuk.
+                    </p>
+                    <div class="kep">
+                        <img src="./images/image42.png" />
+                    </div>
+                    <p>Például.</p>
+                    <div class="kep">
+                        <img src="./images/kep_338.png" />
+                    </div>
+                    <div class="kep">
+                        <img src="./images/kep_328.png" />
+                    </div>
+                    <p>
+                        A pass utasítás. <br />Ha valamiért nem tudjuk
+                        kidolgozni a függvény tartalmát, akkor is bele kell írni
+                        a pass kulcsszót, hogy ne kapjunk hibát!
+                    </p>
+                    <div class="kep">
+                        <img src="./images/kep_339.png" />
+                    </div>
+                    <p>
+                        Pozíció szerinti (Positional Arguments) és/vagy kulcsszó
+                        szerinti (Keyword Arguments) argumentumok. <br />MINDIG
+                        A POZÍCIÓ SZERINTI ARGUMENTUMOK ÁLLNAK ELŐRÉBB A
+                        ZÁRÓJELEK KÖZÖTT!<br />
+                        Csak Positional Arguments.
+                    </p>
+                    <div class="kep">
+                        <img src="./images/kep_340.png" />
+                    </div>
+                    <div class="kep">
+                        <img src="./images/kep_341.png" />
+                    </div>
+                    <p>Nincs megkötés.</p>
+                    <div class="kep">
+                        <img src="./images/kep_342.png" />
+                    </div>
+                    <div class="kep">
+                        <img src="./images/kep_343.png" />
+                    </div>
+                    <p>Csak Keyword Arguments.</p>
+                    <div class="kep">
+                        <img src="./images/kep_344.png" />
+                    </div>
+                    <div class="kep">
+                        <img src="./images/kep_345.png" />
+                    </div>
+                    <p>Keverten.</p>
+                    <div class="kep">
+                        <img src="./images/kep_346.png" />
+                    </div>
+                    <div class="kep">
+                        <img src="./images/kep_347.png" />
+                    </div>
+                </div>
+                <div class="forras">
+                    <span class="feladat-lista">Források: </span>
+                    <p>
+                        <a
+                            href="https://www.w3schools.com/python/python_functions.asp"
+                            target="_blank"
+                            >w3schools</a
+                        >
+                    </p>
+                </div>
+            </div>
+            <div class="belso-container">
+                <h3>Rekurzív függvéy.</h3>
+                <div class="feladat">
+                    <span class="feladat-lista">Feladat: </span>
+                    <p>
+                        Az interneten keressünk rá hogy mi az a rekurzív
+                        függvény!
+                    </p>
+                </div>
+                <div class="valasz">
+                    <span class="feladat-lista">Válaszok:</span>
+                    <div class="kep">
+                        <img src="./images/image43.png" />
+                    </div>
+                    <p>
+                        A rekurzív függvény definiálható olyan rutinként, amely
+                        közvetlenül vagy közvetve meghívja magát.
+                    </p>
+                    <p>
+                        Más szóval, a rekurzív függvény olyan függvény, amely
+                        egy problémát megold ugyanazon probléma kisebb
+                        példányainak megoldásával. <br />
+                        Ezt a technikát általában a programozásban használják
+                        egyszerűbb, hasonló részproblémákra bontható problémák
+                        megoldására.
+                    </p>
+                    <p>
+                        A fejlesztőnek nagyon óvatosnak kell lennie a
+                        rekurzióval, mivel nagyon könnyen belecsúszhat egy olyan
+                        függvény írásába, amely soha nem fejeződik be, vagy
+                        amely túl sok memóriát vagy processzort használ. Jól
+                        megírva azonban a rekurzió nagyon hatékony és
+                        matematikailag elegáns megközelítése lehet a
+                        programozásnak.
+                    </p>
+                    <div class="kep">
+                        <img src="./images/kep_348.png" />
+                    </div>
+                    <div class="kep">
+                        <img src="./images/kep_349.png" />
+                    </div>
+                </div>
+                <div class="forras">
+                    <span class="feladat-lista">Források: </span>
+                    <p>
+                        <a
+                            href="https://www.geeksforgeeks.org/recursive-functions/"
+                            target="_blank"
+                            >geeksforgeeks</a
+                        >
+                    </p>
+                </div>
+            </div>
+            <div class="belso-container">
+                <h3>lambda függvény.</h3>
+                <div class="feladat">
+                    <span class="feladat-lista">Feladat: </span>
+                    <p>
+                        Az interneten keressünk rá hogy mi az a lambda függvény!
+                    </p>
+                </div>
+                <div class="valasz">
+                    <span class="feladat-lista">Válaszok:</span>
+                    <div class="kep">
+                        <img src="./images/image44.png" />
+                    </div>
+                    <p>
+                        A lambda függvény egy kis anonim függvény (Anonymous
+                        Function). <br />Egy lambda függvény tetszőleges számú
+                        argumentumot vehet fel, de csak egy egysoros kifejezése
+                        lehet. <br />
+                        A kifejezés végrehajtásra kerül, és az eredményt
+                        visszaadja.
+                    </p>
+                    <div class="kep">
+                        <img src="./images/kep_350.png" />
+                    </div>
+                    <div class="kep">
+                        <img src="./images/kep_351.png" />
+                    </div>
+                    <p>
+                        A lambda függvény ereje jobban megmutatkozik, ha anonim
+                        függvényként használja őket egy másik függvényen belül.
+                        <br />Használjuk a lambda függvényeket, ha rövid ideig
+                        anonim funkcióra van szükség.
+                    </p>
+                    <div class="kep">
+                        <img src="./images/kep_352.png" />
+                    </div>
+                    <div class="kep">
+                        <img src="./images/kep_353.png" />
+                    </div>
+                </div>
+                <div class="forras">
+                    <span class="feladat-lista">Források: </span>
+                    <p>
+                        <a
+                            href="https://www.w3schools.com/python/python_lambda.asp"
+                            target="_blank"
+                            >w3schools</a
+                        >
+                    </p>
+                    <p>
+                        <a
+                            href="https://medium.com/@ernestasena/lambda-functions-in-python-unleashing-the-magic-of-concise-code-eea35141fbf"
+                            target="_blank"
+                            >medium</a
+                        >
+                    </p>
+                </div>
+            </div>
+            <div class="belso-container">
+                <h3>Néhány nevesebb beépített (built-in) Python függvény.</h3>
+                <div class="feladat">
+                    <span class="feladat-lista">Feladat: </span>
+                    <p>
+                        Az interneten keressünk rá hogy milyen beépített
+                        függvények vannak a Python nyelvben!
+                    </p>
+                </div>
+                <div class="valasz">
+                    <span class="feladat-lista">Válaszok:</span>
+                    <div class="kep">
+                        <img src="./images/image45.png" />
+                    </div>
+                    <p>Tényleg csak néhány példa.</p>
+                    <div class="kep">
+                        <img src="./images/kep_354.png" />
+                    </div>
+                    <div class="kep">
+                        <img src="./images/kep_355.png" />
+                    </div>
+                </div>
+                <div class="forras">
+                    <span class="feladat-lista">Források: </span>
+                    <p>
+                        <a
+                            href="https://www.w3schools.com/python/python_ref_functions.asp"
+                            target="_blank"
+                            >w3schools</a
+                        >
+                    </p>
+                </div>
+            </div>
+            <div class="belso-container">
+                <h3>Feladatok megoldásra.</h3>
+                <div class="feladat">
+                    <span class="feladat-lista">Feladat: </span>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

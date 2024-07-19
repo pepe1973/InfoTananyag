@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <link
+            rel="stylesheet"
+            href="../../src/stilus.css"
+        />
+        <link
+            rel="shortcut icon"
+            href="../../src/info-bg.png"
+            type="image/x-icon"
+        />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+        />
+        <title>
+            Karakterkódolás, UTF-8 kódkészlet, char() és ord() függvények
+        </title>
+    </head>
+    <body>
+        <nav>
+            <a href="./index.html">Tananyag Python</a>
+            <a href="#fel">
+                <span class="material-symbols-outlined">stat_3</span>
+            </a>
+        </nav>
+        <span id="fel"></span>
+        <div class="container">
+            <h1>
+                Karakterkódolás, UTF-8 kódkészlet, char() és ord() függvények
+            </h1>
+            <div class="belso-container">
+                <h3>Karakterkódolás.</h3>
+                <div class="feladat">
+                    <span class="feladat-lista">Feladat: </span>
+                    <p>
+                        Az interneten keressünk rá hogy mi az a karakterkészlet!
+                    </p>
+                </div>
+                <div class="valasz">
+                    <span class="feladat-lista">Válaszok:</span>
+                    <div class="kep">
+                        <img src="./images/image37.jpg" />
+                    </div>
+                    <p>
+                        A karakterkódolási rendszerek az informatikában módszert
+                        jelentenek betűk, számok és hasonló adatok (más
+                        szavakkal karakterek) megjelenítésére, amelyben egy
+                        karaktergyűjtemény minden karakteréhez egy-egy egyedi
+                        számot rendelünk hozzá. Például az ASCII
+                        karaktergyűjteményben az A betűhöz a 65-ös, a B betűhöz
+                        a 66-os, a C betűhöz a 67-es kódot rendelték hozzá.
+                    </p>
+                    <p>
+                        Mindennek az értelme, hogy az informatikai eszközök
+                        (számítógép, faxgépek stb.) nagy része az emberi
+                        kommunikációra használatos ábécéket általában
+                        elektronikus (leggyakrabban digitális) formában tudják
+                        csak megjeleníteni, pl. egy számítógép az összes
+                        digitálisan megjeleníthető karaktert (így a betűk kis és
+                        nagy variánsait, valamint egyéb speciális karaktereket
+                        is) számok formájában tudja csak tárolni és egymástól
+                        megkülönböztetni.
+                    </p>
+                    <p>
+                        Ezeket a számokból álló rendszereket nevezik
+                        karakterkódoknak.
+                    </p>
+                    <p>
+                        A karakterkódolási rendszerek egy elég jól ismert
+                        példáját adják a morzejelek. A morzerendszerben a latin
+                        betűkhöz és arab számokhoz a távíró billentyű rövid vagy
+                        hosszú lenyomását rendelték hozzá.
+                    </p>
+                    <p>
+                        Egy másik sokat olvasható karakterkódolási rendszer
+                        rövidítése az ún. ASCII (American Standard Code for
+                        Information Interchange). Ezt a rendszert 1963-ban
+                        vezették be hogy betűket, számokat és speciális
+                        szimbólumokat 7 biten tárolható számsorozatokkal
+                        helyettesítsenek az adattárolás folyamatában.
+                    </p>
+                    <p>
+                        Ezeknek a karakterkódolási rendszereknek a kapacitás
+                        végessége komoly problémát jelentett. A morze például
+                        csak az arab számokat és a latin ábécé betűit
+                        reprezentálta, az ASCII 7 bites rendszerében pedig egy
+                        idő után beteltek a helyek, nem tudtak az új
+                        szimbólumokhoz egyedi számsorozatot rendelni, amire a
+                        Kelet Ázsiai nyelvek írásszimbólumainak befogadásához
+                        lett volna például szükség.
+                    </p>
+                </div>
+                <div class="forras">
+                    <span class="feladat-lista">Források: </span>
+                    <p>
+                        <a
+                            href="https://hu.wikipedia.org/wiki/Karakterk%C3%B3dol%C3%A1s"
+                            target="_blank"
+                            >Wikipédia</a
+                        >
+                    </p>
+                    <p>
+                        <a
+                            href="https://www.studytrigger.com/article/character-sets-in-python/"
+                            target="_blank"
+                            >studytrigger</a
+                        >
+                    </p>
+                </div>
+            </div>
+            <div class="belso-container">
+                <h3>Unicode karakterkészlet, UTF-8.</h3>
+                <div class="feladat">
+                    <span class="feladat-lista">Feladat: </span>
+                    <p>
+                        Az interneten keressünk rá hogy mi az a Unicode
+                        karakterkódolás!
+                    </p>
+                </div>
+                <div class="valasz">
+                    <span class="feladat-lista">Válaszok:</span>
+                    <div class="kep">
+                        <img src="./images/New_Unicode_logo.svg.png" />
+                    </div>
+                    <p>
+                        A Unicode és a vele párhuzamos szabvány, az ISO 10646
+                        univerzális karakterkészlet - Universal Character Set
+                        (UCS), amelyek a legmodernebb karakterkódolást
+                        testesítik meg, szakítanak az egy karakter egy byte
+                        elvvel. Eltérően az egy-az-egy elvtől, a kezelt
+                        karaktereket "kódegységek" (korlátozott hosszúságú
+                        számok) sorozatának tekinti, majd végül ezt a szám
+                        sorozatot byteok (8 bites egységek) sorozataként
+                        tárolja, illetve ábrázolja. Ez a dekompozíciós elv
+                        biztosítja, hogy felépíthető egy univerzális
+                        karakterkészlet, amely több módon is kódolható, illetve
+                        a kódból visszaállítható. A modell pontos és helyes
+                        leírásához azonban szükség van arra, hogy a
+                        "karakterkészlet" illetve "karakterkódolás"
+                        kifejezéseket az eddig használtaknál pontosabban
+                        határozzák meg. A modern modellben használt kifejezések
+                        a következők:
+                    </p>
+                    <p>
+                        Egy karakterkészlet vagy karakterrepertoár (character
+                        repertoire) a rendszer által támogatott karakterek
+                        teljes készlete. Ez a készlet lehet zárt, azaz nem
+                        megengedett a bővítés, amíg egy új szabvány változat
+                        életbe nem lép (mint az ASCII és a legtöbb ISO-8859
+                        sorozat esetében), vagy lehet nyitott, azaz a bővítés
+                        megengedett (mint a Uncode esetében, és korlátozottan a
+                        Windows code pages esetében). Hogy mit tekintünk egy
+                        adott karakter készlet esetén egy elemnek, azaz egy
+                        karakternek, az attól függ, hogy az adott
+                        írásrendszerben milyen lineáris információegységeket
+                        határozhatunk meg. Alapesetben a latin, görög, cirill
+                        ábécék feloszthatók betűkre, számokra, elválasztó
+                        jelekre és néhány speciális karakterre, mint például a
+                        szóköz, amelyek lineáris sorozatot alkotnak, abban az
+                        értelemben, hogy olyan sorrendben jeleníthetők meg,
+                        amilyen sorrendben azokat olvasni is fogják.
+                    </p>
+                    <p>
+                        A kódolt karakterhalmaz, (coded character set) határozza
+                        meg azt, ahogyan megjeleníti a karakterkészlet egy adott
+                        elemét, egy nem negatív, egész számként, amit kód vagy
+                        kód pont néven is neveznek. Például, egy adott
+                        karakterkészlet esetében egy karakterhez, ami a Latin
+                        ábécé nagy "A" betűjét jelenti, a 65 egész értéket
+                        rendelhetjük, a "B" karakterhez a 66-ot, és így tovább.
+                        Az összes kezelni kívánt karakter a hozzájuk tartozó
+                        egész számokkal együtt alkotja a kódolt karakterek
+                        halmazát.
+                    </p>
+                    <p>
+                        A karakterkódolási forma (character encoding form - CEF)
+                        írja le azt a konverziót, ami meghatározza, hogyan
+                        lesznek a kódolt karakterek halmazában lévő egész
+                        értékekből (a kódpontok) a korlátozott hosszúságú
+                        egészek, a kódértékek, amiket a rendszer tárolni tud,
+                        azaz fix hosszúságú, bináris számként megjeleníteni.
+                        Például, egy rendszer, ami a numerikus információkat 16
+                        bites egységekben tárolja, a 0 és a 65 535 közé eső
+                        egész számokat képes egy egységben tárolni.
+                    </p>
+                    <p>
+                        Azonban a kódolt karakterek halmazának mérete egyre
+                        növekszik (a modern Unicode legalább 21 bitet igényel
+                        karakterenként), az egyszerű módszer egyre kevésbé
+                        hatékony, és egyre nehezebb a létező rendszerekben
+                        megvalósítani a nagyobb/hosszabb kód értékek
+                        használatát. Ezért a legtöbb rendszer a Unicode régebbi
+                        változatait használja, vagy az UTF-8-at, ahol a Unicode
+                        kód pontjait változó hosszúságú, 8 bites értékek
+                        sorozatára, vagy az UTF-16-ot, ahol a Unicode kód
+                        pontjait változó hosszúságú, 16 bites értékek sorozatára
+                        konvertálja.
+                    </p>
+                    <div class="kep">
+                        <img src="./images/image38.jpg" />
+                    </div>
+                    <p>
+                        Végül, egy karakterkódolási séma, (character encoding
+                        scheme - CES) határozza meg, hogyan lehet a fix
+                        hosszúságú, egész számot, a kód értékét, ami egy 8 bites
+                        egységekből álló sorozatként tárolni, akár a memóriában,
+                        akár egy fájlrendszerben vagy így továbbítani
+                        adatátviteli vonalon. A Unicode a legtöbb esetben egy
+                        egyszerű karakterkódolási sémát használ: egyszerűen
+                        meghatározza, hogy egy egész byte-jainak big-endian vagy
+                        little-endian elrendezésűnek kell lennie (az UTF-8 estén
+                        még ez sem szükséges).
+                    </p>
+                    <p>
+                        A Unicode (ejtsd: [junikód]) a különböző írásrendszerek
+                        egységes kódolását és használatát leíró nemzetközi
+                        számítástechnikai iparági szabvány. A Unicode nemcsak a
+                        karakterkódolással, hanem a karakterek osztályozásával,
+                        megjelenítésével és használatával is részletesen
+                        foglalkozik. A Unicode 15.1-es kiadása 149 813 karakter
+                        helyét és szerepét rögzíti, amellyel 161 különböző
+                        eredetű modern és történelmi ábécét, valamint számos
+                        szimbólumkészletet fed le.
+                    </p>
+                    <p>
+                        A Unicode szabvány 16 biten tárolt (legfeljebb 65 536
+                        karaktert tartalmazó) síkokra osztja a Unicode
+                        kódpontokat. A 17 síkon összesen 1 114 112 kódpont
+                        található, amelyből a szabvány legutóbbi változata
+                        mintegy 144 ezer kódpontot foglalt le a karakterek
+                        számára.
+                    </p>
+                    <p>
+                        A Unicode-szövegeket különböző karakterkódolással
+                        tárolhatjuk. A Unicode szabvány meghatározza az UTF-8,
+                        UTF-16 és az UTF-32 karakterkódolást, és számos más
+                        kódolás is használatban van. A leggyakrabban használt
+                        kódolások az UTF-8, UTF-16 és UCS-2, utóbbi az UTF-16
+                        elődje.
+                    </p>
+                    <p>
+                        A weboldalak és dokumentumok legelterjedtebb
+                        Unicode-karakterkódolása az UTF-8. Az UTF-8 változó
+                        hosszúságú kódolással (1-4[2] byte) képezi le a
+                        Unicode-karaktertáblát. 1 byte-on tárolt kódjai az
+                        ASCII-nak felelnek meg, így a latin betűs UTF-8 kódolású
+                        szövegek a régi ASCII környezetben is olvashatóak
+                        maradnak. Az UTF-8-ban kódolt latin betűs szövegek
+                        ugyanakkora vagy - ékezetes betűk használata esetén -
+                        csak kicsivel nagyobb helyet foglalnak el, mint a
+                        korábban elterjedt 8 bites karakterkészletek
+                        használatakor.
+                    </p>
+                </div>
+                <div class="forras">
+                    <span class="feladat-lista">Források: </span>
+                    <p>
+                        <a
+                            href="https://hu.wikipedia.org/wiki/Karakterk%C3%B3dol%C3%A1s"
+                            target="_blank"
+                            >Wikipédia</a
+                        >
+                    </p>
+                    <p>
+                        <a
+                            href="https://hu.wikipedia.org/wiki/Unicode"
+                            target="_blank"
+                            >Wikipédia - Unicode</a
+                        >
+                    </p>
+                </div>
+            </div>
+            <div class="belso-container">
+                <h3>Python UTF-8 kódolás.</h3>
+                <div class="feladat">
+                    <span class="feladat-lista">Feladat: </span>
+                    <p>
+                        Az interneten keressünk rá hogyan tudjuk használni az
+                        UTF-8 kódolást a Python-ban!
+                    </p>
+                </div>
+                <div class="valasz">
+                    <span class="feladat-lista">Válaszok:</span>
+                    <div class="kep">
+                        <img src="./images/image39.jpg" />
+                    </div>
+                    <p>
+                        A Python alapból az UTF-8 kódolást használja. De ha egy
+                        külső forrásból kap egy karakterláncot akkor szükséges
+                        lehet a karakterkódolás beállítása.
+                    </p>
+                    <div class="kep">
+                        <img src="./images/kep_322.png" />
+                    </div>
+                    <div class="kep">
+                        <img src="./images/kep_323.png" />
+                    </div>
+                </div>
+                <div class="forras">
+                    <span class="feladat-lista">Források: </span>
+                    <p>
+                        <a
+                            href="https://www.geeksforgeeks.org/convert-a-string-to-utf-8-in-python/"
+                            target="_blank"
+                            >geeksforgeeks</a
+                        >
+                    </p>
+                </div>
+            </div>
+            <div class="belso-container">
+                <h3>Az ord() és chr() függvények.</h3>
+                <div class="feladat">
+                    <span class="feladat-lista">Feladat: </span>
+                    <p>
+                        Az interneten keressünk rá hogyan tudjuk használni az
+                        ord() és chr() függvényeket a Python-ban!
+                    </p>
+                </div>
+                <div class="valasz">
+                    <span class="feladat-lista">Válaszok:</span>
+                    <div class="kep">
+                        <img src="./images/image40.png" />
+                    </div>
+                    <p>
+                        Ha szeretnénk megtudni egy karakter kódértékét akkor az
+                        ord() függvényt használom. <br />
+                        Ha viszont azt szeretnénk megtudni, hogy egy kódérték
+                        melyik karaktert reprezentálja, akkor a chr() függvényt.
+                    </p>
+                    <div class="kep">
+                        <img src="./images/kep_324.png" />
+                    </div>
+                    <div class="kep">
+                        <img src="./images/kep_325.png" />
+                    </div>
+                </div>
+                <div class="forras">
+                    <span class="feladat-lista">Források: </span>
+                    <p>
+                        <a
+                            href="https://favtutor.com/blogs/ord-function-python"
+                            target="_blank"
+                            >Favtutor</a
+                        >
+                    </p>
+                </div>
+            </div>
+            <div class="belso-container">
+                <h3>Feladatok megoldásra.</h3>
+                <div class="feladat">
+                    <span class="feladat-lista">Feladat: </span>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
