@@ -32,7 +32,7 @@
         <div class="container">
             <h1>Halmazok (set)</h1>
             <div class="belso-container">
-                <h3>Sorok (Tuple).</h3>
+                <h3>Halmazok (set).</h3>
                 <div class="feladat">
                     <span class="feladat-lista">Feladat: </span>
                     <p>
@@ -49,7 +49,8 @@
                         A halmazok több elem tárolására szolgálnak egyetlen
                         változóban. <br />
                         Nem szükséges, hogy azonos adattípussal rendelkezzenek.
-                        De nem lehet lista, könyvtár vagy másik halmaz.
+                        De nem lehet lista, könyvtár vagy másik halmaz. <br />
+                        Nincs elemismétlődés, duplikáció!
                     </p>
                     <p>
                         A halmazok a Pythonban az adatgyűjtemények (data
@@ -66,6 +67,27 @@
                     </div>
                     <div class="kep">
                         <img src="./images/kep_384.png" />
+                    </div>
+                    <p>
+                        A False és a 0, valamint a True és 1 a halmaz
+                        szempontjából duplikációnak számít! Ezért csak egyiket
+                        hagyja meg.
+                    </p>
+                    <div class="kep">
+                        <img src="./images/kep_393.png" />
+                    </div>
+                    <div class="kep">
+                        <img src="./images/kep_394.png" />
+                    </div>
+                    <p>
+                        A halmaz elemeinek a számát a len()-metódussal kapjuk
+                        meg.
+                    </p>
+                    <div class="kep">
+                        <img src="./images/kep_395.png" />
+                    </div>
+                    <div class="kep">
+                        <img src="./images/kep_396.png" />
                     </div>
                     <p>
                         A halmaz megváltoztathatatlan (unchangeable) abban az
@@ -88,7 +110,8 @@
                         <img src="./images/kep_388.png" />
                     </div>
                     <p>
-                        A halmaz elemeinek nincsen indexe. <br />
+                        A halmaz elemeinek nincsen indexe. Így az adatokhoz
+                        tetszőleges sorrendben hozzá lehet férni.<br />
                         Ezért az elemeit csak for-ciklussal tudom bejárni.
                     </p>
                     <div class="kep">
@@ -98,68 +121,21 @@
                         <img src="./images/kep_390.png" />
                     </div>
                     <p>
-                        Negatív index-ek is megengedettek. Ekkor az utolsó elem
-                        indexe a -1, az előtte lévőé -2 stb.
-                    </p>
-                    <div class="kep">
-                        <img src="./images/kep_364.png" />
-                    </div>
-                    <div class="kep">
-                        <img src="./images/kep_365.png" />
-                    </div>
-                    <p>
                         A tartalmazást vizsgáló operátorok (Membership
                         Operators) az in és a not in itt is használhatóak.
                     </p>
                     <div class="kep">
-                        <img src="./images/kep_366.png" />
+                        <img src="./images/kep_391.png" />
                     </div>
                     <div class="kep">
-                        <img src="./images/kep_367.png" />
-                    </div>
-                    <p>
-                        Mivel a sor megváltoztathatatlan (unchangeable), ezért
-                        ha szeretnénk módosítani az elemeken, akkor listává kell
-                        tennünk, majd a változtatás után vissza alakítjuk sorrá.
-                    </p>
-                    <div class="kep">
-                        <img src="./images/kep_368.png" />
-                    </div>
-                    <div class="kep">
-                        <img src="./images/kep_369.png" />
-                    </div>
-                    <p>
-                        Becsomagolás (Packing) és kicsomagolás (Unpacking)
-                        <br />
-                        A sor létrehozását becsomagolásnak nevezzük. <br />Ha az
-                        elemeit külön változókba kimentjük, akkor kicsomagoljuk.
-                        <br />Ha az változók száma kevesebb, mint a sor
-                        elemszáma, akkor használni kell a *-operátort, ami egy
-                        listát ad vissza! <br />HASZNÁLHATÓ A LISTÁKNÁL IS!
-                    </p>
-                    <div class="kep">
-                        <img src="./images/kep_370.png" />
-                    </div>
-                    <div class="kep">
-                        <img src="./images/kep_371.png" />
-                    </div>
-                    <p>Két vagy több sort a + operátorral egyesítünk.</p>
-                    <p>
-                        Egy sor elemeit megtöbbszörözni a * operátorral lehet.
-                    </p>
-                    <br />HASZNÁLHATÓ A LISTÁKNÁL IS!
-                    <div class="kep">
-                        <img src="./images/kep_377.png" />
-                    </div>
-                    <div class="kep">
-                        <img src="./images/kep_378.png" />
+                        <img src="./images/kep_392.png" />
                     </div>
                 </div>
                 <div class="forras">
                     <span class="feladat-lista">Források: </span>
                     <p>
                         <a
-                            href="https://www.w3schools.com/python/python_tuples.asp"
+                            href="https://www.w3schools.com/python/python_sets.asp"
                             target="_blank"
                             >w3schools</a
                         >
@@ -167,46 +143,53 @@
                 </div>
             </div>
             <div class="belso-container">
-                <h3>A sor elemeinek kiíratása.</h3>
+                <h3>Halmazok egyesítése.</h3>
                 <div class="feladat">
                     <span class="feladat-lista">Feladat: </span>
                     <p>
-                        Az interneten keressünk rá hogyan tudjuk kiíratni a
-                        sorok elemeit!
+                        Az interneten keressünk rá hogy milyen halmazműveletek
+                        vannak!
                     </p>
                 </div>
                 <div class="valasz">
                     <span class="feladat-lista">Válaszok:</span>
                     <div class="kep">
-                        <img src="./images/image50.jpg" />
+                        <img src="./images/image52.png" />
                     </div>
-                    <p>A for ciklus segítségével.</p>
+                    <p>Az egyesítés (Union).</p>
                     <div class="kep">
-                        <img src="./images/kep_372.png" />
-                    </div>
-                    <div class="kep">
-                        <img src="./images/kep_373.png" />
-                    </div>
-                    <p>A while ciklus segítségével.</p>
-                    <div class="kep">
-                        <img src="./images/kep_374.png" />
+                        <img src="./images/kep_397.png" />
                     </div>
                     <div class="kep">
-                        <img src="./images/kep_375.png" />
+                        <img src="./images/kep_398.png" />
                     </div>
-                    <p>Használhatjuk a List Comprehension-t is.</p>
+                    <p>A metszet (Intersection).</p>
                     <div class="kep">
-                        <img src="./images/kep_376.png" />
+                        <img src="./images/kep_399.png" />
                     </div>
                     <div class="kep">
-                        <img src="./images/kep_375.png" />
+                        <img src="./images/kep_400.png" />
+                    </div>
+                    <p>A különbség (Difference).</p>
+                    <div class="kep">
+                        <img src="./images/kep_401.png" />
+                    </div>
+                    <div class="kep">
+                        <img src="./images/kep_402.png" />
+                    </div>
+                    <p>A szimmetrikus különbség (Symmetric Difference).</p>
+                    <div class="kep">
+                        <img src="./images/kep_403.png" />
+                    </div>
+                    <div class="kep">
+                        <img src="./images/kep_404.png" />
                     </div>
                 </div>
                 <div class="forras">
                     <span class="feladat-lista">Források: </span>
                     <p>
                         <a
-                            href="https://www.w3schools.com/python/python_lists.asp"
+                            href="https://www.w3schools.com/python/python_sets_join.asp"
                             target="_blank"
                             >w3schools</a
                         >
@@ -214,48 +197,43 @@
                 </div>
             </div>
             <div class="belso-container">
-                <h3>A sor metódusok.</h3>
+                <h3>A halmaz metódusok.</h3>
                 <div class="feladat">
                     <span class="feladat-lista">Feladat: </span>
                     <p>
                         Az interneten keressünk rá hogyan milyen metódusok
-                        vannak sorokra!
+                        vannak halmazokra!
                     </p>
                 </div>
                 <div class="valasz">
                     <span class="feladat-lista">Válaszok:</span>
                     <div class="kep">
-                        <img src="./images/image51.jpg" />
+                        <img src="./images/image52.jpg" />
                     </div>
-                    <p>
-                        Az index() metódus arra jó, hogy egy speciális elem első
-                        előfordulásának indexét meghatározza.
-                    </p>
-                    <p>
-                        A count() metódus arra jó, hogy egy speciális elem
-                        összes előfordulásának számát meghatározza.
-                    </p>
+                    <p>A copy() metódus. Lemásol egy halmazt.</p>
                     <div class="kep">
-                        <img src="./images/kep_379.png" />
+                        <img src="./images/kep_405.png" />
                     </div>
                     <div class="kep">
-                        <img src="./images/kep_380.png" />
+                        <img src="./images/kep_406.png" />
+                    </div>
+                    <p>
+                        Az isdisjoint(), issubset() és issuperset() metódusok.
+                    </p>
+                    <div class="kep">
+                        <img src="./images/kep_407.png" />
+                    </div>
+                    <div class="kep">
+                        <img src="./images/kep_408.png" />
                     </div>
                 </div>
                 <div class="forras">
                     <span class="feladat-lista">Források: </span>
                     <p>
                         <a
-                            href="https://www.w3schools.com/python/python_tuples_methods.asp"
+                            href="https://www.w3schools.com/python/python_sets_methods.asp"
                             target="_blank"
                             >w3schools</a
-                        >
-                    </p>
-                    <p>
-                        <a
-                            href="https://pythongeeks.org/python-tuples/"
-                            target="_blank"
-                            >pythongeeks</a
                         >
                     </p>
                 </div>
