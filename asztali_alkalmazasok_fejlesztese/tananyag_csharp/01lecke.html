@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <link
+            rel="stylesheet"
+            href="../../src/stilus.css"
+        />
+        <link
+            rel="shortcut icon"
+            href="../../src/info-bg.png"
+            type="image/x-icon"
+        />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+        />
+        <title>Ismerkedés a C# programozási nyelvvel</title>
+    </head>
+    <body>
+        <nav>
+            <a href="./index.html">Tananyag C#</a>
+            <a href="#fel">
+                <span class="material-symbols-outlined">stat_3</span>
+            </a>
+        </nav>
+        <span id="fel"></span>
+        <div class="container">
+            <h1>Ismerkedés a C# programozási nyelvvel</h1>
+            <div class="belso-container">
+                <h3>A C# története.</h3>
+                <div class="feladat">
+                    <span class="feladat-lista">Feladat: </span>
+                    <p>Az interneten keressünk rá a C# történetére!</p>
+                </div>
+                <div class="valasz">
+                    <span class="feladat-lista">Válaszok:</span>
+                    <div class="kep">
+                        <img src="./images/image01.png" />
+                    </div>
+                    <p>
+                        A 90-es években a Microsoft a saját Java
+                        keretkörnyezetét a saját operációsrendszer-specifikus
+                        függvényeivel és szolgáltatásaival bővítette ki, amire
+                        viszont nem volt engedélye (a Java licencét birtokló)
+                        Sun Microsystemstől. A Microsoft-féle Javára fejlesztett
+                        alkalmazások nem lettek volna futtathatók más
+                        rendszereken, ami ellenkezik a Java
+                        platform-függetlenségre vonatkozó alapelvével. A Sun
+                        végül beperelte a Microsoftot, és ezt követően a
+                        Microsoft a Java eltávolítására kényszerült a Windows
+                        rendszerekből (természetesen a Java-t a továbbiakban is
+                        lehet külön rendszerként telepíteni). A Microsoft egy
+                        saját keretrendszer fejlesztésébe kezdett. Ez lett a
+                        .NET (kiejtése: dotnet), és ehhez a keretrendszerhez
+                        adták ki programnyelvként a C# első verzióját. A
+                        későbbiekben ezt a nyelvet úgy fejlesztették tovább,
+                        hogy meglegyen az egyensúly a programozó nyelvi
+                        szabadsága és a gyors alkalmazásfejlesztés lehetősége
+                        között. Rengeteg hivatalosan kiadott bővítmény létezik
+                        hozzá, amelyek a kódolást könnyebbé teszik.
+                    </p>
+                    <p>
+                        A C# fejlesztését Anders Hejlsberg vezette, aki a Turbo
+                        Pascal tervezője is volt. A .NET osztálykönyvtárait a
+                        programozók eredetileg egy sajátos, ún. SMC (Simple
+                        Managed C) nyelven írták. 1999-ben azonban Hejlsberg
+                        (aki addig a J++ nyelven dolgozott) vezetésével egy
+                        csapat alakult egy új programozási nyelv létrehozására,
+                        akkoriban COOL (C-like Object Oriented Language,
+                        magyarul: C-szerű Objektumorientált Nyelv) fedőnév
+                        alatt. A cél egy olyan nyelv megalkotása volt, mellyel
+                        teljesen objektumorientált módon lehet a keretrendszer
+                        komponenseit fejleszteni. Egy évvel később, 2000
+                        júliusában a PDC konferencián a .NET-tel, és az
+                        ASP.NET-tel együtt a C#-ot is bemutatták, immár ezen
+                        névvel, hogy az esetleges szerzői jogi problémákat
+                        megelőzzék. Bár sok bírálat érte megjelenésekor, főleg a
+                        Java-s táborból, miszerint a Microsoft pusztán
+                        legyártotta a saját Java verzióját, Anders azt
+                        nyilatkozta, hogy a nyelvet sokkal inkább a C++-hoz
+                        szerették volna közelíteni.
+                    </p>
+                    <p>
+                        A Microsoft benyújtotta a C# nyelvi specifikációját az
+                        ECMA-hoz formális szabványosításra. 2001 decemberében az
+                        ECMA kiadta az ECMA-334 C# Language Specification
+                        szabványt, 2003-ban pedig ISO szabvány lett (ISO/IEC
+                        23270).
+                    </p>
+                </div>
+                <div class="forras">
+                    <span class="feladat-lista">Források: </span>
+                    <p>
+                        <a
+                            href="https://hu.wikipedia.org/wiki/C_Sharp"
+                            target="_blank"
+                            >Wikipédia</a
+                        >
+                    </p>
+                </div>
+            </div>
+            <div class="belso-container">
+                <h3>Mi az a .NET keretrendszer?</h3>
+                <div class="feladat">
+                    <span class="feladat-lista">Feladat: </span>
+                    <p>Az interneten keressünk rá a .NET keretrendszerre!</p>
+                </div>
+                <div class="valasz">
+                    <span class="feladat-lista">Válaszok:</span>
+                    <div class="kep">
+                        <img src="./images/image02.png" />
+                    </div>
+                    <p>
+                        A Microsoft által készített .NET keretrendszer (a .NET
+                        Framework) gyors alkalmazásfejlesztést (RAD),
+                        platformfüggetlenséget és hálózati átlátszóságot
+                        támogató szoftverfejlesztői platform. A keretrendszert a
+                        korábbi platform, a COM leváltására szánták.
+                    </p>
+                    <div class="kep">
+                        <img src="./images/image03.jpg" />
+                    </div>
+                    <p>
+                        Eredetileg a .NET kifejezés nemcsak fejlesztői
+                        környezetet jelentett, hanem fejlesztőeszközök,
+                        szoftverek, sőt hardvereszközök összességét is. Az évek
+                        során a kép kitisztult, így mostanra a .NET alatt a
+                        keretrendszert értjük. <br />A .NET Framework eszköztára
+                        a szoftverfejlesztés szinte minden aspektusát (kliens-,
+                        illetve szerveroldali megoldások, adatbázisok kezelése,
+                        játékfejlesztés stb.) lefedi.
+                    </p>
+                    <div class="kep">
+                        <img src="./images/image04.png" />
+                    </div>
+                    <p>Architektúra</p>
+                    <div class="kep">
+                        <img src="./images/kep_001.png" />
+                    </div>
+                    <p>
+                        A Microsoft által korábban támogatott komponens alapú
+                        modell a COM volt (aminek része volt az MTS az elosztott
+                        tranzakciók támogatására), később pedig a COM+ lett. Bár
+                        a .NET be tudja csomagolni a COM komponenseket és
+                        fordítva - amit a Microsoft Runtime Callable Wrapper-nek
+                        (RCW) és COM Callable Wrapper-nek (CCW) hív -, a
+                        Microsoft egyértelműen jelezte, hogy a .NET mint
+                        szoftver komponens architektúra le fogja cserélni a
+                        COM-ot. A Microsoft reményei szerint a Win32 platformra
+                        fejlesztők elkezdik használni a .NET-et a COM helyett,
+                        és a jelenlegi szolgáltatásokat absztrakt interfészeken
+                        keresztül érik el (például a tranzakciókban részt vevő
+                        .NET komponensek jelenleg COM+-t használnak).
+                    </p>
+                    <p>A .NET által támogatott nyelvek</p>
+                    <div class="kep">
+                        <img src="./images/kep_002.png" />
+                    </div>
+                </div>
+                <div class="forras">
+                    <span class="feladat-lista">Források: </span>
+                    <p>
+                        <a
+                            href="https://hu.wikipedia.org/wiki/.NET_keretrendszer"
+                            target="_blank"
+                            >Wikipédia</a
+                        >
+                    </p>
+                    <p>
+                        <a
+                            href="https://dotnet.microsoft.com/en-us/"
+                            target="_blank"
+                            >.NET</a
+                        >
+                    </p>
+                    <p>
+                        <a
+                            href="https://hu.wikipedia.org/wiki/Common_Language_Infrastructure"
+                            target="_blank"
+                            >Common Language Infrastructure</a
+                        >
+                    </p>
+                    <p>
+                        <a
+                            href="https://www.geeksforgeeks.org/c-sharp-net-framework-basic-architecture-component-stack/"
+                            target="_blank"
+                            >geeksforgeeks</a
+                        >
+                    </p>
+                    <p>
+                        <a
+                            href="https://www.javatpoint.com/vb-net-dot-net-framework-introduction"
+                            target="_blank"
+                            >javaTpoint</a
+                        >
+                    </p>
+                </div>
+            </div>
+            <div class="belso-container">
+                <h3>Mi az a CLR (Common Language Runtime)?</h3>
+                <div class="feladat">
+                    <span class="feladat-lista">Feladat: </span>
+                    <p>Az interneten keressünk rá a CLR-re!</p>
+                </div>
+                <div class="valasz">
+                    <span class="feladat-lista">Válaszok:</span>
+                    <div class="kep">
+                        <img src="./images/image06.jpg" />
+                    </div>
+                    <p>
+                        A Common Language Runtime (CLR) a .NET Keretrendszer
+                        része, egy futtatókörnyezet. Lehetővé teszi a Common
+                        Intermediate Language nevű kód futtatását különböző
+                        platformokon, például Windowson, Unixon, Linuxon és
+                        Macintoshon.
+                    </p>
+                    <p>
+                        A Common Language Runtime (CLR), a Microsoft
+                        .NET-keretrendszer virtuálisgép összetevője kezeli a
+                        .NET-programok végrehajtását. A just-in-time fordítás a
+                        felügyelt kódot (fordított köztes nyelvi kódot) gépi
+                        utasításokká alakítja, amelyeket aztán a számítógép CPU-
+                        ján hajtanak végre. <br />
+                        A CLR további szolgáltatásokat nyújt, beleértve a
+                        memóriakezelést, a típusbiztonságot, a kivételkezelést,
+                        a szemétgyűjtést, a biztonságot és a szálkezelést. A
+                        .NET-keretrendszerhez írt összes program, a programozási
+                        nyelvtől függetlenül, a CLR-ben fut le. A
+                        .NET-keretrendszer összes verziója tartalmazza a CLR-t.
+                    </p>
+                </div>
+                <div class="forras">
+                    <span class="feladat-lista">Források: </span>
+                    <p>
+                        <a
+                            href="https://en.wikipedia.org/wiki/Common_Language_Runtime"
+                            target="_blank"
+                            >Wikipédia</a
+                        >
+                    </p>
+                    <p>
+                        <a
+                            href="https://learn.microsoft.com/hu-hu/dotnet/standard/clr"
+                            target="_blank"
+                            >CLR</a
+                        >
+                    </p>
+                </div>
+            </div>
+            <div class="belso-container">
+                <h3>Mi az a konfigurációs fájl és mi a forrásfájl?</h3>
+                <div class="feladat">
+                    <span class="feladat-lista">Feladat: </span>
+                    <p>
+                        Az interneten keressünk rá a konfigurációs fájl és a
+                        forrásfájl jelentésére!
+                    </p>
+                </div>
+                <div class="valasz">
+                    <span class="feladat-lista">Válaszok:</span>
+                    <div class="kep">
+                        <img src="./images/image05.jpg" />
+                    </div>
+                    <p>
+                        A számítástechnikában a konfigurációs fájlok (általános
+                        nevén konfig fájlok) olyan fájlok, amelyek segítségével
+                        konfigurálhatók bizonyos számítógépes programok vagy
+                        alkalmazások, szerverfolyamatok és operációs rendszer
+                        beállításai a paraméterek és a kezdeti beállítások.
+                    </p>
+                    <p>
+                        A konfigurációs fájlok fontosak a modern
+                        számítástechnika számára. Lehetővé teszik annak
+                        testreszabását, hogy hogyan kommunikálj egy
+                        alkalmazással, vagy egy alkalmazás hogyan kommunikáljon
+                        a rendszer többi részével. <br />
+                        A konfigurációs fájloknak köszönhetően minden
+                        alkalommal, amikor elindítasz egy alkalmazást, vannak
+                        "emlékeik", hogyan szeretnéd használni.
+                    </p>
+                    <div class="kep">
+                        <img src="./images/image07.jpg" />
+                    </div>
+                    <p>
+                        A forrásfájlok a forráskód tárolására használt
+                        állományok. Ezek sima szövegszekesztóben és
+                        professzionális IDE-vel is szerkeszthetőek.
+                        <br />A C# esetén ezeknek az állományoknak a
+                        kiterjesztése általában vagy .cs, vagy .dll.
+                    </p>
+                </div>
+                <div class="forras">
+                    <span class="feladat-lista">Források: </span>
+                    <p>
+                        <a
+                            href="https://en.wikipedia.org/wiki/Configuration_file"
+                            target="_blank"
+                            >Wikipédia - Configuration File</a
+                        >
+                    </p>
+                    <p>
+                        <a
+                            href="https://configu.com/blog/configuration-files-types-examples-and-5-critical-best-practices/"
+                            target="_blank"
+                            >configu</a
+                        >
+                    </p>
+                    <p>
+                        <a
+                            href="https://en.wikipedia.org/wiki/Source_code"
+                            target="_blank"
+                            >Wikipédia - Source Code</a
+                        >
+                    </p>
+                </div>
+            </div>
+            <div class="belso-container">
+                <h3>Feladatok megoldásra.</h3>
+                <div class="feladat">
+                    <span class="feladat-lista">Feladat: </span>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -184,6 +184,15 @@ nav > a {
     text-align: justify;
 }
 
+.valasz dl {
+    background-color: #dbdbdb;
+    color: #000;
+    border-radius: 3px;
+    margin-top: 0.5em;
+    padding: 0.5em;
+    text-align: justify;
+}
+
 .valasz p:nth-of-type(even) {
     background-color: #646464;
 }

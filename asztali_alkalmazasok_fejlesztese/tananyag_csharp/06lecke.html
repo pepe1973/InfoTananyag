@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <link
+            rel="stylesheet"
+            href="../../src/stilus.css"
+        />
+        <link
+            rel="shortcut icon"
+            href="../../src/info-bg.png"
+            type="image/x-icon"
+        />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+        />
+        <title>Változók, literálok és adattípusok</title>
+    </head>
+    <body>
+        <nav>
+            <a href="./index.html">Tananyag C#</a>
+            <a href="#fel">
+                <span class="material-symbols-outlined">stat_3</span>
+            </a>
+        </nav>
+        <span id="fel"></span>
+        <div class="container">
+            <h1>Változók, literálok és adattípusok</h1>
+            <div class="belso-container">
+                <h3>Mi az a változó?</h3>
+                <div class="feladat">
+                    <span class="feladat-lista">Feladat: </span>
+                    <p>
+                        Az interneten keressünk rá arra, hogy mi a változó és
+                        mire lehet használni!
+                    </p>
+                </div>
+                <div class="valasz">
+                    <span class="feladat-lista">Válaszok:</span>
+                    <div class="kep">
+                        <img src="./images/image25.jpg" />
+                    </div>
+                    <p>A változók adatértékek tárolására szolgáló tárolók.</p>
+                    <p>A</p>
+                </div>
+                <div class="forras">
+                    <span class="feladat-lista">Források: </span>
+                    <p>
+                        <a
+                            href="https://dotnettutorials.net/lesson/introduction-to-csharp-language/"
+                            target="_blank"
+                            >dotNET Tutorials</a
+                        >
+                    </p>
+                </div>
+            </div>
+            <div class="belso-container">
+                <h3>A C# nyelv szintaxisa.</h3>
+                <div class="feladat">
+                    <span class="feladat-lista">Feladat: </span>
+                    <p>
+                        Az interneten keressünk rá, hogy mit kell tudni a C#
+                        szintaxisáról!
+                    </p>
+                </div>
+                <div class="valasz">
+                    <span class="feladat-lista">Válaszok:</span>
+                    <div class="kep">
+                        <img src="./images/image20.jpg" />
+                    </div>
+                    <p>Nézzük a következő egyszerű programot!</p>
+                    <div class="kep">
+                        <img src="./images/kep_017.png" />
+                    </div>
+                    <p>
+                        Látható, hogy az utasításokat kötelező lezárni ';'!
+                        <br />A szóközöket és új sorokat figyelmenkívül hagyja a
+                        fordító. Csak az olvashatóságot, áttekinthetőséget
+                        segítik! <br />A kódblokkokat {}-kapcsos zárójelek
+                        jelölik. A behúzások itt is csak az olvashatóságot
+                        segítik!<br />A Visual Studio Community 2022
+                        színjelöléseket használ a különböző szintaktikai
+                        szavakhoz!
+                    </p>
+                    <p>
+                        Meg kell adni a using kulcsszó után a használt
+                        névtereket (namespace)!
+                    </p>
+                    <p>
+                        A programot kötelezően egy névtérben (namespace) kell
+                        megírni! Ez legtöbbször megegyezik a projekt nevével.<br />
+                        A névtér gyűjtőhelye azoknak az oszályoknak (class),
+                        amelyekben dolgozunk. Ez alapból a Program osztály.
+                    </p>
+                    <p>
+                        A Main()-metódus a program belépési pontja, ezért nem
+                        hagyható ki a kódból!
+                    </p>
+                </div>
+            </div>
+            <div class="belso-container">
+                <h3>Kommentek a C# nyelvben.</h3>
+                <div class="feladat">
+                    <span class="feladat-lista">Feladat: </span>
+                    <p>
+                        Az interneten keressünk rá, hogy lehet kommentálni a C#
+                        nyelvben!
+                    </p>
+                </div>
+                <div class="valasz">
+                    <span class="feladat-lista">Válaszok:</span>
+                    <div class="kep">
+                        <img src="./images/image24.png" />
+                    </div>
+                    <p>
+                        A legtöbb esetben két fajta kommenttel találkozhatunk a
+                        kódban.
+                    </p>
+                    <p>
+                        Egysoros komment. <br />
+                        Ebben az esetben a sorban elhelyezett //-jel utáni részt
+                        a fordító nem veszi figyelembe.
+                    </p>
+                    <p>
+                        Többsoros komment. <br />
+                        Ebben az esetben a kódban elhelyezett /* és */-jelpár
+                        közötti részt a fordító nem veszi figyelembe.
+                    </p>
+                    <div class="kep">
+                        <img src="./images/kep_030.png" />
+                    </div>
+                </div>
+            </div>
+            <div class="belso-container">
+                <h3>Hibakeresési (debugging) alapok.</h3>
+                <div class="feladat">
+                    <span class="feladat-lista">Feladat: </span>
+                    <p>Az interneten keressünk rá, hogy mi az a hibakeresés!</p>
+                </div>
+                <div class="valasz">
+                    <span class="feladat-lista">Válaszok:</span>
+                    <div class="kep">
+                        <img src="./images/image21.jpg" />
+                    </div>
+                    <p>
+                        Kattintsuk egy sorra majd nyomjuk meg az F9-es
+                        billentyűt. Ezzel egy törőpontot (breakpoint) helyeztünk
+                        el a kódban. <br />Hibakeresés esetén ezeknél a
+                        pontoknál kezdi el vizsgálni alaposabban a környezet a
+                        kódot.
+                    </p>
+                    <div class="kep">
+                        <img src="./images/kep_018.png" />
+                    </div>
+                    <p>
+                        A hibakeresés elindítása az F5 gombbal történik. Ekkor
+                        felépíti (Build) a szerkesztő a programot és elkezdi
+                        vizsgálni.
+                    </p>
+                    <p>
+                        Két dolgot figyelhetünk meg. <br />-Aktiválódnak új
+                        elemek az eszköztárban (Tool Bar). <br />-Megjelenik egy
+                        Autos nevű ablak. Ebben az ablakban láthatjuk az összes
+                        változó értékét, amit megadtunk.
+                    </p>
+                    <div class="kep">
+                        <img src="./images/kep_019.png" />
+                    </div>
+                    <div class="kep">
+                        <img src="./images/kep_020.png" />
+                    </div>
+                    <p>
+                        Kezjünk el kattintgatni a zöld keretben lévő lefelé
+                        mutató nyílon.
+                    </p>
+                    <div class="kep">
+                        <img src="./images/kep_021.png" />
+                    </div>
+                    <div class="kep">
+                        <img src="./images/kep_022.png" />
+                    </div>
+                    <p>Végigkattintgatva Kiir() metóduson kapjuk.</p>
+                    <div class="kep">
+                        <img src="./images/kep_023.png" />
+                    </div>
+                    <p>
+                        Annyi változik, hogy a konzolra kiírásra került az
+                        "ALMA"-szó.
+                    </p>
+                    <div class="kep">
+                        <img src="./images/kep_024.png" />
+                    </div>
+                    <p>
+                        Ismét néhány kattintás után megnövelődik az i-változó
+                        értéke.
+                    </p>
+                    <div class="kep">
+                        <img src="./images/kep_025.png" />
+                    </div>
+                    <div class="kep">
+                        <img src="./images/kep_026.png" />
+                    </div>
+                    <p>
+                        Tovább kattintgatva szépen megjelenik mind a három
+                        gyümölcs a konzolon, és leáll a hibakeresés.
+                    </p>
+                    <div class="kep">
+                        <img src="./images/kep_027.png" />
+                    </div>
+                </div>
+            </div>
+            <div class="belso-container">
+                <h3>Feladatok megoldásra.</h3>
+                <div class="feladat">
+                    <span class="feladat-lista">Feladat: </span>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

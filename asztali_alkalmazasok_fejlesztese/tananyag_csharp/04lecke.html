@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <link
+            rel="stylesheet"
+            href="../../src/stilus.css"
+        />
+        <link
+            rel="shortcut icon"
+            href="../../src/info-bg.png"
+            type="image/x-icon"
+        />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+        />
+        <title>Az objektumorientált programozás alapjai C# nyelven</title>
+    </head>
+    <body>
+        <nav>
+            <a href="./index.html">Tananyag C#</a>
+            <a href="#fel">
+                <span class="material-symbols-outlined">stat_3</span>
+            </a>
+        </nav>
+        <span id="fel"></span>
+        <div class="container">
+            <h1>Az objektumorientált programozás alapjai C# nyelven</h1>
+            <div class="belso-container">
+                <h3>
+                    Mi a különbség az osztály és a példány, objektum között?
+                </h3>
+                <div class="feladat">
+                    <span class="feladat-lista">Feladat: </span>
+                    <p>
+                        Az interneten keressünk rá, hogy mi a különbség az
+                        osztály és a példány, objektum között!
+                    </p>
+                </div>
+                <div class="valasz">
+                    <span class="feladat-lista">Válaszok:</span>
+                    <div class="kep">
+                        <img src="./images/image22.jpg" />
+                    </div>
+                    <p>
+                        Osztály <br />
+                        A modellezés során nyert absztrakt adattípus
+                        implementációja. Egy programozó által definiálható
+                        típus, amely tartalmazhat <br />-adatokat az objektum
+                        struktúrájának modellezésére <br />-metódusokat az
+                        objektum viselkedésének modellezésére
+                    </p>
+                    <p>
+                        Objektum <br />Egy osztály egy példánya. Egy osztály
+                        általában többször is példányosítható. A példányok
+                        ugyanazzal a viselkedésfajtákkal rendelkeznek, ugyanaz a
+                        struktúrája, de minden példány más állapottal
+                        rendelkezhet (azaz adatai más-más értékekkel
+                        rendelkezhetnek).
+                    </p>
+                    <p>
+                        Példányosítás <br />Az osztályból létrehozunk egy
+                        objektumot, azaz egy példányt.
+                    </p>
+                    <p>
+                        Nézzünk egy egyszerű példát. Az osztály definícióját
+                        mindig class-szal kell kezdeni:
+                    </p>
+                    <div class="kep">
+                        <img src="./images/kep_028.png" />
+                    </div>
+                </div>
+                <div class="forras">
+                    <span class="feladat-lista">Források: </span>
+                    <p>
+                        <a
+                            href="https://okt.inf.szte.hu/prog1/gyakorlat/eloadas/Java/objectsAndClasses/"
+                            target="_blank"
+                            >SZTE</a
+                        >
+                    </p>
+                    <p>
+                        <a
+                            href="https://docplayer.hu/10562475-Oop-alapelvek-elek-tibor.html"
+                            target="_blank"
+                            >Elek tibor</a
+                        >
+                    </p>
+                </div>
+            </div>
+            <div class="belso-container">
+                <h3>Mik azok a property-k?</h3>
+                <div class="feladat">
+                    <span class="feladat-lista">Feladat: </span>
+                    <p>
+                        Az interneten keressünk rá, hogy mik azok a property-k?
+                    </p>
+                </div>
+                <div class="valasz">
+                    <span class="feladat-lista">Válaszok:</span>
+                    <div class="kep">
+                        <img src="./images/image23.jpg" />
+                    </div>
+                    <p>
+                        A property-k megértéséhez előbb ismerjük meg az OPP
+                        alapelveit.
+                    </p>
+                    <p>
+                        Egységbezárás (Encapsulation) <br />Biztonságosabbá
+                        teszi a kódot, mert az összetartozó adatok, függvények
+                        és eljárások egy egységbe tartoznak, és kívülről csak az
+                        férhet hozzá, amit az objektum osztálya megenged.
+                    </p>
+                    <p>
+                        Öröklés (Inheritance) <br />A hosszú, bonyolult kódok
+                        elkerülésére a rendszerben létrehozhatunk az adott
+                        objektumhoz hasonló kódrészletekkel rendelkező, annak
+                        felépítését követő új objektumot, ún. gyermek
+                        alosztályt.
+                    </p>
+                    <p>
+                        Többalakúság (Polimorphism) <br />Lehetővé teszi, hogy
+                        az objektum tulajdonságait öröklő alosztály saját,
+                        eltérő módon működő metódusokkal rendelkezzen.
+                    </p>
+                    <p>
+                        Az egységbezárás miatt vannak adatok, melyek rejtve
+                        vannak a külvilág elől. Ezért módosítani csak az
+                        úgynevezett property-ken keresztül lehet. <br />
+                        Ezek speciális adattagok az osztályon belül, melyek
+                        rendelkeznek get (lekérő) és set (beállító)
+                        lehetőségekkel. Ezeken keresztül most már hozzáférhetünk
+                        egyes rejtett adathoz.
+                    </p>
+                    <div class="kep">
+                        <img src="./images/kep_029.png" />
+                    </div>
+                </div>
+                <div class="forras">
+                    <span class="feladat-lista">Források: </span>
+                    <p>
+                        <a
+                            href="https://tudasbazis.sulinet.hu/hu/informatika/informatika/informatika-9-12-evfolyam/programozas-c-kornyezetben/osztalyok"
+                            target="_blank"
+                            >sulinet</a
+                        >
+                    </p>
+                </div>
+            </div>
+            <div class="belso-container">
+                <h3>Feladatok megoldásra.</h3>
+                <div class="feladat">
+                    <span class="feladat-lista">Feladat: </span>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
